@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +8,10 @@ import NavigationBar from './NavigationBar';
 ReactDOM.render(
   <React.StrictMode>
     <NavigationBar />
-    <App />
+    <div class = "main-wrapper">
+        <App />
+    </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
