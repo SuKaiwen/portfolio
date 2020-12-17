@@ -30,7 +30,7 @@ function App() {
             </Col>
         </Row>
         <hr style = {{minHeight: "5px"}}></hr>
-        <Row>
+        <Row id = "about">
             <Col xs="6" style = {{minHeight: "700px"}}>
                 <h3 style = {{textAlign: "left", marginTop:"100px"}}> About Me </h3>
                 <h5 style = {{textAlign: "left"}}>I undertook a Bachelor of Software Engineering Honors course</h5>
@@ -63,9 +63,9 @@ function App() {
                 <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
             </Col>
         </Row>
-        <hr style = {{minHeight: "5px"}}></hr>
-        <h3 style = {{marginTop:"100px", marginBottom: "20px"}}> Projects </h3>
-        <Row style = {{justifyContent:"center"}}>
+        <hr style = {{minHeight: "5px"}} id = "projects"></hr>
+        <h3 style = {{marginTop:"100px", marginBottom: "20px"}} > Projects </h3>
+        <Row style = {{justifyContent:"center"}} >
             <Carousel style = {{maxWidth: "1000px", width:"100%", zIndex:"0"}}>
               <Carousel.Item style = {{backgroundColor: "#29c3c3", maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                 <Carousel.Caption>
@@ -95,7 +95,7 @@ function App() {
         </Row>
         <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
         <hr style = {{minHeight: "5px"}}></hr>
-        <h3 style = {{marginTop:"100px", marginBottom: "20px"}}> Work Experience </h3>
+        <h3 style = {{marginTop:"100px", marginBottom: "20px"}} id = "exp"> Work Experience </h3>
         <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
         <div className="container-fluid">
           <div className="row">

@@ -30,6 +30,10 @@ hr {
     background-color: #adadad;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .line {
   border-left: 6px solid green;
   height: 500px;
