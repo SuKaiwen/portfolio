@@ -23,6 +23,14 @@ function App() {
         <h1> Kevin Su </h1>
         <hr style = {{minHeight: "5px"}}></hr>
         <Row>
+            <Col style = {{minHeight: "100px"}}>
+                <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fa fa-linkedin fa-2x" style = {{padding:"20px"}}></i></a>
+                <a href="https://github.com/SuKaiwen"><i class="fa fa-github fa-2x" style = {{padding:"20px"}}></i></a>
+                <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px"}}></i></a>
+            </Col>
+        </Row>
+        <hr style = {{minHeight: "5px"}}></hr>
+        <Row>
             <Col xs="6" style = {{minHeight: "700px"}}>
                 <h3 style = {{textAlign: "left", marginTop:"100px"}}> About Me </h3>
                 <h5 style = {{textAlign: "left"}}>I undertook a Bachelor of Software Engineering Honors course</h5>
