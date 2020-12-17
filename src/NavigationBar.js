@@ -7,7 +7,8 @@ function NavigationBar() {
   return (
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" style = {{position: "fixed",
                                                                          top: "0",
-                                                                         width: "100%"}}>
+                                                                         width: "100%",
+                                                                         zIndex:"5"}}>
       <a class="navbar-brand" style = {{ color: "#5288DB" }} >KS</a>
       <a class="navbar-brand" style = {{ color: "#F5FAFA" }} >Kevin Su</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
