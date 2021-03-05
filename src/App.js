@@ -4,126 +4,198 @@ import profileImg from './img/link.jpg';
 import profileJpg from './img/Profile.jpg';
 import snipsnok from './img/snipsnok.jpg';
 import snipsnok2 from './img/snipsnok2.jpg';
+import opera from './img/opera.jpg';
+import cat from './img/coot.jpg';
+import mount from './img/mount3.jpg';
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
 
 function App() {
   return (
     <div className="App">
       <div style = {{backgroundColor: "#fafafa", minHeight:"1000px"}}>
-        <div class = "mosaic">
-            <div class = "mosaic__item">
-                <img src={backgroundImg} alt="Logo" style = {{width: "100%", maxHeight:"500px"}}/>
-            </div>
-            <div class = "mosaic__item">
-                <img src={profileImg} alt="Logo" style = {{border:"10px solid #fafafa", minWidth:"150px", minHeight:"150px", borderRadius: 300/ 2 }}/>
+        <div class="imagecontainer">
+          <img src={mount} alt="Logo" style = {{width:"100%", height:"70%", maxHeight:"900px"}}/>
+          <div class="centered">
+            <h1 style = {{fontSize:"5vw"}}>Hi I'm Kevin and welcome to my website!</h1>
+          </div>
+        </div>
+        <div className="container-fluid">
+            <div class = "row" id = "about">
+                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center"}}>
+                    <img src={profileImg} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
+                    <h1 style = {{fontSize: 60, fontFamily: "Roboto"}}> Kevin Su </h1>
+                    <br></br>
+                    <h5 style = {{fontSize: 20, fontFamily: "Roboto"}}>Mobile: +64 22 584 0669</h5>
+                    <hr style = {{minHeight: "5px"}}></hr>
+                    <h3 style = {{fontFamily: "Roboto", fontSize: 20}}> Linkedin | Github | Email </h3>
+                    <div>
+                        <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px"}}></i></a>
+                        <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px"}}></i></a>
+                        <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px"}}></i></a>
+                    </div>
+                    <hr style = {{minHeight: "5px"}}></hr>
+                </div>
+                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center"}}>
+                    <img src={opera} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
+                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", fontSize: "30px", color: "#606060"}}>The University of Sydney</h5>
+                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", color: "#606060"}}>BEHons(Software) Grad</h5>
+                    <h3 style = {{textAlign: "left", marginTop:"50px", fontFamily: "Roboto"}}> Hi there! </h3>
+                    <h5 style = {{textAlign: "left", fontFamily: "Roboto"}}>I'm Kevin Su, an aspiring web developer from Auckland, New Zealand. I undertook a Bachelor of Software Engineering Honors degree at the University of Sydney and is scheduled to graduate in 2021. I am interested in web development especially the front end aspect.</h5>
+                </div>
+                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems: "center"}}>
+                    <h3 style = {{marginTop:"50px", fontFamily: "Roboto", fontSize:"40px"}}> Skills </h3>
+                    <div class = "row">
+                          <div class = "column" style = {{marginTop:"10px"}}>
+                              <i class="fa fa-database fa-5x" style = {{color: "#ff6666"}}></i>
+                              <h5>Database</h5>
+                              <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>MySQL</h5>
+                          </div>
+                          <div class = "column" style = {{marginTop:"10px"}}>
+                              <i class="fab fa-python fa-5x" style = {{color: "#ff6666"}}></i>
+                              <h5>Python</h5>
+                              <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>React, Django, Axios</h5>
+                          </div>
+                      </div>
+                    <div class = "row">
+                        <div class = "column" style = {{marginTop:"10px"}}>
+                            <i class="fab fa-html5 fa-5x" style = {{color: "#ff6666"}}></i>
+                            <h5>Web Dev</h5>
+                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>HTML, CSS, React, JS, C#/.Net</h5>
+                        </div>
+                        <div class = "column" style = {{marginTop:"10px"}}>
+                            <i class="fas fa-sitemap fa-5x" style = {{color: "#ff6666"}}></i>
+                            <h5>ORM</h5>
+                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Hibernate</h5>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "column" style = {{marginTop:"10px"}}>
+                            <i class="fas fa-code fa-5x" style = {{color: "#ff6666"}}></i>
+                            <h5>Code</h5>
+                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>C++, Java, MATLAB</h5>
+                        </div>
+                        <div class = "column" style = {{marginTop:"10px"}}>
+                            <i class="fas fa-users fa-5x" style = {{color: "#ff6666"}}></i>
+                            <h5>Interpersonal</h5>
+                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Friendly, Positive, Optimistic</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <h1> Kevin Su </h1>
-        <hr style = {{minHeight: "5px"}}></hr>
-        <Row>
-            <Col style = {{minHeight: "100px"}}>
-                <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fa fa-linkedin fa-2x" style = {{padding:"20px"}}></i></a>
-                <a href="https://github.com/SuKaiwen"><i class="fa fa-github fa-2x" style = {{padding:"20px"}}></i></a>
-                <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px"}}></i></a>
-            </Col>
-        </Row>
-        <hr style = {{minHeight: "5px"}}></hr>
-        <Row id = "about">
-            <Col xs="6" style = {{minHeight: "700px"}}>
-                <h3 style = {{textAlign: "left", marginTop:"100px"}}> About Me </h3>
-                <h5 style = {{textAlign: "left"}}>I undertook a Bachelor of Software Engineering Honors course</h5>
-                <h5 style = {{textAlign: "left"}}>at the University of Sydney and recently graduated (2021). </h5>
-                <h5 style = {{textAlign: "left"}}>I am interested in full stack web development especially the </h5>
-                <h5 style = {{textAlign: "left"}}>front end aspect.</h5>
-            </Col>
-            <Col xs="6" style = {{minHeight: "700px", maxWidth: "300px"}}>
-                <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
-                <h5 style = {{textAlign: "left"}}>JavaScript</h5>
-                <ProgressBar animated now={90} />
-                <h5 style = {{textAlign: "left"}}>React</h5>
-                <ProgressBar animated now={80} />
-                <h5 style = {{textAlign: "left"}}>Python</h5>
-                <ProgressBar animated now={80} />
-                <h5 style = {{textAlign: "left"}}>HTML/CSS</h5>
-                <ProgressBar animated now={80} />
-                <h5 style = {{textAlign: "left"}}>Axios</h5>
-                <ProgressBar animated now={70} />
-                <h5 style = {{textAlign: "left"}}>Hibernate</h5>
-                <ProgressBar animated now={60} />
-                <h5 style = {{textAlign: "left"}}>SQL</h5>
-                <ProgressBar animated now={60} />
-                <h5 style = {{textAlign: "left"}}>Django</h5>
-                <ProgressBar animated now={50} />
-                <h5 style = {{textAlign: "left"}}>Spring</h5>
-                <ProgressBar animated now={40} />
-                <h5 style = {{textAlign: "left"}}>.Net</h5>
-                <ProgressBar animated now={40} />
-                <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
-            </Col>
-        </Row>
         <hr style = {{minHeight: "5px"}} id = "projects"></hr>
-        <h3 style = {{marginTop:"100px", marginBottom: "20px"}} > Projects </h3>
-        <Row style = {{justifyContent:"center"}} >
+        <h3 style = {{color: "#cedeef", fontFamily: "Roboto", backgroundColor: "#0d1a27", marginBottom: "80px", fontSize: "30px"}}>Projects</h3>
+        <Row style = {{justifyContent:"center"}}>
             <Carousel style = {{maxWidth: "1000px", width:"100%", zIndex:"0"}}>
-              <Carousel.Item style = {{backgroundColor: "#29c3c3", maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+              <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                 <Carousel.Caption>
                   <img src={profileJpg} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "80%", maxHeight:"500px"}}/>
-                  <h3 style = {{marginTop: "20px"}}>Portfolio (Front End)</h3>
-                  <p>Created this portfolio to showcase my projects and you get to learn a little bit more about me!</p>
-                  <p>Skills: React, CSS</p>
+                  <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto"}}>Portfolio</h3>
+                  <p style = {{color: "black", fontFamily: "Roboto"}}>Created this portfolio to showcase my projects and you get to learn a little bit more about me!</p>
+                  <p style = {{color: "black", fontFamily: "Roboto"}}>Skills: React, CSS</p>
                 </Carousel.Caption>
               </Carousel.Item>
-              <Carousel.Item style = {{backgroundColor: "#29c3c3", maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+              <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                   <Carousel.Caption>
                     <img src={snipsnok2} style = {{zIndex:"0"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
                     <img src={snipsnok}  style = {{zIndex:"0"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
-                    <h3>SnipSnok (Full Stack)</h3>
-                    <p>Created along with team members as a part of a university project! SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
-                    <p>Skills: React, Python, Hibernate, Spring, Axios</p>
+                    <h3 style = {{color: "black", fontFamily: "Roboto"}}>SnipSnok</h3>
+                    <p style = {{color: "black", fontFamily: "Roboto"}}>Created along with team members as a part of a university project! SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
+                    <p style = {{color: "black", fontFamily: "Roboto"}}>Skills: React, Python, Hibernate, Spring, Axios</p>
                   </Carousel.Caption>
                 </Carousel.Item>
-               <Carousel.Item style = {{backgroundColor: "#29c3c3", maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+               <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                  <Carousel.Caption>
-                   <h3>Amazing Race (Front End)</h3>
-                   <p>Created along with team member as part of a university assignment! The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</p>
-                   <p>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</p>
+                   <h3 style = {{color: "black", fontFamily: "Roboto"}}>Amazing Race</h3>
+                   <p style = {{color: "black", fontFamily: "Roboto"}}>Created along with team member as part of a university assignment! The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</p>
+                   <p style = {{color: "black", fontFamily: "Roboto"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</p>
                  </Carousel.Caption>
                </Carousel.Item>
             </Carousel>
-        </Row>
-        <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
-        <hr style = {{minHeight: "5px"}}></hr>
-        <h3 style = {{marginTop:"100px", marginBottom: "20px"}} id = "exp"> Work Experience </h3>
-        <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-12 d-none d-sm-block col-sm-4 order-2" style = {{marginTop: "20px", padding:"10px", backgroundColor: "#29c3c3"}}>
-                <h5 style = {{color: "white"}}>GPOS Limited</h5>
-                <h5 style = {{color: "white"}}>Role: Summer Intern</h5>
-                <p style = {{color: "white"}}>Dec 2018- Feb 2019</p>
-            </div>
-            <div className="col-12 col-sm-4 order-1" style = {{marginTop: "20px", padding:"10px", backgroundColor: "#29c3c3"}}>
-                <h5 style = {{color: "white"}}>Eden Foods Limited</h5>
-                <h5 style = {{color: "white"}}>Role: Cashier</h5>
-                <p style = {{color: "white"}}>2014 - 2018</p>
-            </div>
-            <div className="col-12 col-sm-4 order-3" style = {{marginTop: "20px", padding:"10px", backgroundColor: "#29c3c3"}}>
-                <h5 style = {{color: "white"}}>GPOS Limited</h5>
-                <h5 style = {{color: "white"}}>Role: Summer Intern</h5>
-                <p style = {{color: "white"}}>Dec 2019 - Feb 2020</p>
-            </div>
-            <div className="col-12 d-sm-none order-2" style = {{marginTop: "20px", padding:"10px", backgroundColor: "#29c3c3"}}>
-                <h5 style = {{color: "white"}}>GPOS Limited</h5>
-                <h5 style = {{color: "white"}}>Role: Summer Intern</h5>
-                <p style = {{color: "white"}}>Dec 2018- Feb 2019</p>
-            </div>
-          </div>
-        </div>
-        <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
+        </Row >
+        <h3 style = {{textAlign: "left", marginTop:"50px"}} >  </h3>
+        <hr style = {{minHeight: "5px"}} ></hr>
+        <h3 style = {{color: "#cedeef", fontFamily: "Roboto", backgroundColor: "#0d1a27", marginBottom: "50px", fontSize: "30px"}} id = "exp"  >Experience</h3>
         <h3 style = {{textAlign: "left", marginTop:"100px"}}>  </h3>
 
+        <div class = "row" style = {{alignItems:"center"}}>
+            <div class = "column" style = {{alignItems:"center"}}>
+                <Card style={{ width: '75%', height:"auto", textAlign:"left", minHeight:"525px"}}>
+                     <Card.Body>
+                       <div style = {{textAlign:"center", marginBottom:"30px"}}>
+                        <i class="fas fa-tasks fa-5x" style = {{color: "#ff6666"}}></i>
+                       </div>
+                       <Card.Title style = {{color: "black", fontFamily: "Roboto", fontSize:"25px"}}>Assistant Manager</Card.Title>
+                       <Card.Text >
+                         <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Eden Foods Limited</h3>
+                         <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>2016 - 2018</h3>
+                         <hr></hr>
+                         Aided in stock management and control of the daily workflow within the store
+                         to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.
+                         <hr></hr>
+                         <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Location: Auckland, NZ</h3>
+                       </Card.Text>
+                     </Card.Body>
+                   </Card>
+             </div>
+             <div class = "column" style = {{alignItems:"center"}}>
+                 <Card style={{ width: '75%', height:"auto", textAlign:"left", minHeight:"525px"}}>
+                    <Card.Body>
+                      <div style = {{textAlign:"center", marginBottom:"30px"}}>
+                        <i class="fas fa-cog fa-5x" style = {{color: "#ff6666"}}></i>
+                      </div>
+                      <Card.Title style = {{color: "black", fontFamily: "Roboto", fontSize:"25px"}}>Unit Testing Intern</Card.Title>
+                      <Card.Text >
+                        <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>GPOS Limited</h3>
+                        <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Dec 2018 - Feb 2019</h3>
+                        <hr></hr>
+                        Performed black box testing on a general point of sales software application using Postman and manually testing the application itself.
+                        <hr></hr>
+                        <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Location: Auckland, NZ</h3>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+              </div>
+              <div class = "column" style = {{alignItems:"center"}}>
+                   <Card style={{ width: '75%', height:"auto", textAlign:"left", minHeight:"525px"}}>
+                      <Card.Body>
+                        <div style = {{textAlign:"center", marginBottom:"30px"}}>
+                        <i class="fas fa-file-code fa-5x" style = {{color: "#ff6666"}}></i>
+                       </div>
+                        <Card.Title style = {{color: "black", fontFamily: "Roboto", fontSize:"25px"}}>Front End Intern</Card.Title>
+                        <Card.Text >
+                          <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>GPOS Limited</h3>
+                          <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Dec 2019 - Feb 2020</h3>
+                          <hr></hr>
+                          Developed templates for a payments screen using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote
+                          extensive integration and unit tests for the created payments screen. Engaged with Agile Methodologies (weekly sprints). Improved
+                          presentation skills via presenting the product to the team.
+                          <hr></hr>
+                          <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"15px"}}>Location: Auckland, NZ</h3>
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+               </div>
+        </div>
+        <hr style = {{minHeight: "5px", marginTop:"20px"}} id="con"></hr>
+         <h3 style = {{color: "#cedeef", fontFamily: "Roboto", backgroundColor: "#0d1a27", marginBottom: "50px", fontSize: "30px"}}>Contact Me</h3>
+         <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
+         <div class = "row">
+            <div class = "column" style = {{minHeight:"500px"}}>
+                 <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"30px"}}>Let's get in touch!</h3>
+                 <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"20px", marginTop:"20px"}}>Mobile: +64 22 584 0669</h3>
+                 <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px"}}></i></a>
+                         <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px"}}></i></a>
+                         <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px"}}></i></a>
+             </div>
+            <div class = "column" style = {{minHeight:"500px", alignItems:"center", textAlign:"left"}}>
+                <img src={cat} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"250px", maxHeight:"250px", borderRadius: 300/ 2 }}/>
+                <h3 style = {{color: "black", fontFamily: "Roboto", fontSize:"20px"}}>Thank you for making it all the way to the end!</h3>
+            </div>
+         </div>
       </div>
     </div>
   );

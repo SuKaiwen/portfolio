@@ -8,8 +8,10 @@ import NavigationBar from './NavigationBar';
 ReactDOM.render(
   <React.StrictMode>
     <NavigationBar />
-    <div class = "main-wrapper">
-        <App />
+    <div class = "back">
+        <div class = "main-wrapper">
+            <App />
+        </div>
     </div>
 
   </React.StrictMode>,

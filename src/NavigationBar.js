@@ -29,6 +29,9 @@ function NavigationBar() {
           <li class="nav-item">
             <a class="nav-link" href="#exp" style = {{marginRight: "50px"}}>Work Experience</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#con" style = {{marginRight: "50px"}}>Contact Me</a>
+          </li>
         </ul>
       </div>
     </nav>
