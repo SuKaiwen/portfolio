@@ -8,6 +8,8 @@ import opera from './img/opera.jpg';
 import cat from './img/coot.jpg';
 import mount from './img/mount3.jpg';
 import amazingrace from './img/amazingrace.jpg';
+import bounce from './img/bounce.jpg';
+import weather from './img/weather.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
@@ -123,6 +125,23 @@ function App() {
                        <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</p>
                      </Carousel.Caption>
                    </Carousel.Item>
+                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+                       <Carousel.Caption>
+                         <img src={bounce} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
+                         <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Bouncing Balls</h3>
+                         <p style = {{color: "white", fontFamily: "Roboto"}}>Created a physics simulation of bouncing balls within a bounded cube. Created in Processing 3.</p>
+                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: Object Oriented Programming, Algorithms, Data Structures</p>
+                       </Carousel.Caption>
+                     </Carousel.Item>
+                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+                      <Carousel.Caption>
+                        <img src={weather} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "70%", maxHeight:"500px"}}/>
+                        <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Weather App</h3>
+                        <p style = {{color: "white", fontFamily: "Roboto"}}>Developed an application that displays the weather information for cities around the world. It fetches the information using
+                                                                            OpenWeatherAPI and formats it in a dynamic and readable way using React components</p>
+                        <p style = {{color: "white", fontFamily: "Roboto"}}>Skills:  HTML, CSS, React, Algorithms, JS, Data Structures, API Usage</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
                 </Carousel>
             </Row >
         </div>
