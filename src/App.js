@@ -10,6 +10,9 @@ import mount from './img/mount3.jpg';
 import amazingrace from './img/amazingrace.jpg';
 import bounce from './img/bounce.jpg';
 import weather from './img/weather.jpg';
+import stars from './img/stars.jpg';
+import paint from './img/paint.jpg';
+import flower from './img/flower.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
@@ -21,14 +24,16 @@ function App() {
     <div className="App">
       <div style = {{backgroundColor: "#fafafa", minHeight:"1000px"}}>
         <div class="imagecontainer">
-          <img src={mount} alt="Logo" style = {{width:"100%", height:"70%", maxHeight:"900px"}}/>
-          <div class="centered">
-            <h1 style = {{fontSize:"5vw"}}>Hi I'm Kevin and welcome to my website!</h1>
-          </div>
+            <img src={mount} style = {{width:"100%", height:"80%", maxHeight:"800px"}}alt="Logo"/>
+            <div class="centered">
+                <h1 style = {{fontSize: "8vw", fontFamily: "Minimum-Impact"}}>Hi I'm Kevin</h1>
+                <h1 style = {{fontSize: "2vw", fontFamily: "Minimum-Impact"}}>Welcome to my Portfolio</h1>
+                <hr style = {{width: "30%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+            </div>
         </div>
         <div className="container-fluid" style = {{marginBottom:"50px"}}>
             <div class = "row" id = "about">
-                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center", padding:"10px"}}>
+                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center"}}>
                     <img src={profileImg} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
                     <h1 style = {{fontSize: 60, fontFamily: "Roboto"}}> Kevin Su </h1>
                     <br></br>
@@ -42,54 +47,57 @@ function App() {
                     </div>
                     <hr style = {{minHeight: "5px"}}></hr>
                 </div>
-                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center", padding:"10px"}}>
+                <div class = "column" style = {{minHeight: "600px", alignItems:"center", padding:"10px"}}>
                     <img src={opera} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
-                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", fontSize: "30px", color: "#606060"}}>The University of Sydney</h5>
-                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", color: "#606060"}}>BEHons(Software) Grad</h5>
+                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", fontSize: "30px"}}>The University of Sydney</h5>
+                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto"}}>BEHons(Software) Grad</h5>
                     <h3 style = {{textAlign: "left", marginTop:"50px", fontFamily: "Roboto"}}> Hi there! </h3>
                     <h5 style = {{textAlign: "left", fontFamily: "Roboto"}}>I'm Kevin Su, an aspiring web developer from Auckland, New Zealand. I undertook a Bachelor of Software Engineering Honors degree at the University of Sydney and is scheduled to graduate in 2021. I am interested in web development especially the front end aspect.</h5>
                 </div>
-                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems: "center"}}>
+                <div class = "column" style = {{minHeight: "600px", alignItems: "center"}}>
                     <h3 style = {{marginTop:"50px", fontFamily: "Roboto", fontSize:"40px"}}> Skills </h3>
-                    <div class = "row">
-                          <div class = "column" style = {{marginTop:"10px"}}>
+                    <hr style = {{marginTop: "10px", width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                    <div class = "row" style = {{marginBottom:"10px"}}>
+                          <div class = "column">
                               <i class="fa fa-database fa-5x" style = {{color: "#ff6666"}}></i>
                               <h5>Database</h5>
                               <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>MySQL</h5>
                           </div>
-                          <div class = "column" style = {{marginTop:"10px"}}>
+                          <div class = "column" >
                               <i class="fab fa-python fa-5x" style = {{color: "#ff6666"}}></i>
                               <h5>Python</h5>
                               <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>React, Django, Axios</h5>
                           </div>
                       </div>
-                    <div class = "row">
-                        <div class = "column" style = {{marginTop:"10px"}}>
+                    <div class = "row" style = {{marginBottom:"10px"}}>
+                        <div class = "column" >
                             <i class="fab fa-html5 fa-5x" style = {{color: "#ff6666"}}></i>
                             <h5>Web Dev</h5>
                             <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>HTML, CSS, React, JS, C#/.Net</h5>
                         </div>
-                        <div class = "column" style = {{marginTop:"10px"}}>
+                        <div class = "column" >
                             <i class="fas fa-sitemap fa-5x" style = {{color: "#ff6666"}}></i>
                             <h5>ORM</h5>
                             <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Hibernate</h5>
                         </div>
+
                     </div>
                     <div class = "row">
-                        <div class = "column" style = {{marginTop:"10px"}}>
-                            <i class="fas fa-code fa-5x" style = {{color: "#ff6666"}}></i>
-                            <h5>Code</h5>
-                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>C++, Java, MATLAB</h5>
-                        </div>
-                        <div class = "column" style = {{marginTop:"10px"}}>
-                            <i class="fas fa-users fa-5x" style = {{color: "#ff6666"}}></i>
-                            <h5>Interpersonal</h5>
-                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Friendly, Positive, Optimistic</h5>
-                        </div>
+                        <div class = "column" >
+                          <i class="fas fa-code fa-5x" style = {{color: "#ff6666"}}></i>
+                          <h5>Code</h5>
+                          <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>C++, Java, MATLAB</h5>
+                      </div>
+                      <div class = "column" >
+                          <i class="fas fa-users fa-5x" style = {{color: "#ff6666"}}></i>
+                          <h5>Interpersonal</h5>
+                          <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Friendly, Positive, Optimistic</h5>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class = "whitespace"></div>
         <div style = {{backgroundColor: "#0C2D48", fontFamily: "Roboto", minHeight:"100%"}} id = "projects">
             <h3 style = {{backgroundColor: "#0C2D48", minHeight:"40px"}}></h3>
             <div class = "row">

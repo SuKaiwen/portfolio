@@ -13,7 +13,7 @@ code {
 }
 
 .back{
-    background: #fafafa;
+    background: #ffffff;
 }
 .circle {
     background: lightblue;
@@ -48,14 +48,14 @@ html {
 .main-wrapper {
     margin: 0 auto;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #ffffff;
     min-height: 500px;
 }
 @media only screen and (max-width: 800px) {
   .main-wrapper {
     margin: 0 auto;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #ffffff;
     min-height: 500px;
   }
 }

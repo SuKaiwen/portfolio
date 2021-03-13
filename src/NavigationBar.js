@@ -21,16 +21,16 @@ function NavigationBar() {
                                                                          }}>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about" style = {{marginRight: "50px"}}>About Me</a>
+            <a class="nav-link" href="#about" style = {{marginRight: "50px"}}>About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects" style = {{marginRight: "50px"}}>Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#exp" style = {{marginRight: "50px"}}>Work Experience</a>
+            <a class="nav-link" href="#exp" style = {{marginRight: "50px"}}>Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#con" style = {{marginRight: "50px"}}>Contact Me</a>
+            <a class="nav-link" href="#con" style = {{marginRight: "50px"}}>Contact</a>
           </li>
         </ul>
       </div>
