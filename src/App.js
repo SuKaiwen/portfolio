@@ -56,7 +56,7 @@ function App() {
                 </div>
                 <div class = "column" style = {{minHeight: "600px", alignItems: "center"}}>
                     <h3 style = {{marginTop:"50px", fontFamily: "Roboto", fontSize:"40px"}}> Skills </h3>
-                    <hr style = {{marginTop: "10px", width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                    <hr style = {{marginTop: "10px", width: "50%", backgroundColor: "black", height:"5px"}}></hr>
                     <div class = "row" style = {{marginBottom:"10px"}}>
                           <div class = "column">
                               <i class="fa fa-database fa-5x" style = {{color: "#ff6666"}}></i>
@@ -97,7 +97,6 @@ function App() {
                 </div>
             </div>
         </div>
-        <div class = "whitespace"></div>
         <div style = {{backgroundColor: "#0C2D48", fontFamily: "Roboto", minHeight:"100%"}} id = "projects">
             <h3 style = {{backgroundColor: "#0C2D48", minHeight:"40px"}}></h3>
             <div class = "row">
