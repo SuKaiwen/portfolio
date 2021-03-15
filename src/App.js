@@ -13,6 +13,7 @@ import weather from './img/weather.jpg';
 import stars from './img/stars.jpg';
 import paint from './img/paint.jpg';
 import flower from './img/flower.jpg';
+import bookstore from './img/bookstore.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
@@ -107,46 +108,60 @@ function App() {
              </div>
             <Row style = {{justifyContent:"center", alignItems:"center", textAlign:"center"}}>
                 <Carousel style = {{maxWidth: "1000px", width:"100%", zIndex:"0", marginBottom:"100px"}}>
-                  <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+                  <Carousel.Item style = {{maxHeight:"700px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                     <Carousel.Caption>
-                      <img src={profileJpg} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "80%", maxHeight:"500px"}}/>
+                      <img src={profileJpg} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "70%", maxHeight:"600px"}}/>
                       <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Portfolio</h3>
                       <p style = {{color: "white", fontFamily: "Roboto"}}>Created this portfolio to showcase my projects and you get to learn a little bit more about me!</p>
                       <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: React, CSS</p>
+                      <a href="https://github.com/SuKaiwen/portfolio"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                       <Carousel.Caption>
-                        <img src={snipsnok2} style = {{zIndex:"0"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
-                        <img src={snipsnok}  style = {{zIndex:"0"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
+                        <img src={snipsnok2} style = {{zIndex:"0"}} alt="Logo" style = {{width: "35%", maxHeight:"500px"}}/>
+                        <img src={snipsnok}  style = {{zIndex:"0"}} alt="Logo" style = {{width: "35%", maxHeight:"500px"}}/>
                         <h3 style = {{color: "white", fontFamily: "Roboto"}}>SnipSnok</h3>
                         <p style = {{color: "white", fontFamily: "Roboto"}}>Created along with team members as a part of a university project! SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: React, Python, Hibernate, Spring, Axios</p>
+                        <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
                       </Carousel.Caption>
                     </Carousel.Item>
                    <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                      <Carousel.Caption>
-                       <img src={amazingrace} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "70%", maxHeight:"500px"}}/>
+                       <img src={amazingrace} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "50%", maxHeight:"600px"}}/>
                        <h3 style = {{color: "white", fontFamily: "Roboto", marginTop:"20px"}}>Amazing Race</h3>
-                       <p style = {{color: "white", fontFamily: "Roboto"}}>Created along with team member as part of a university assignment! The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</p>
+                       <p style = {{color: "white", fontFamily: "Roboto"}}>Created along with team members as part of a university assignment! The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</p>
                        <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</p>
+                       <a href="https://github.com/SuKaiwen/AmazingRace"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
                      </Carousel.Caption>
                    </Carousel.Item>
                    <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                        <Carousel.Caption>
-                         <img src={bounce} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "40%", maxHeight:"500px"}}/>
+                         <img src={bounce} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "30%", maxHeight:"600px"}}/>
                          <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Bouncing Balls</h3>
                          <p style = {{color: "white", fontFamily: "Roboto"}}>Created a physics simulation of bouncing balls within a bounded cube. Created in Processing 3.</p>
                          <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: Object Oriented Programming, Algorithms, Data Structures</p>
+                         <a href="https://github.com/SuKaiwen/BouncingBalls"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
+                       </Carousel.Caption>
+                     </Carousel.Item>
+                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
+                       <Carousel.Caption>
+                         <img src={bookstore} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "30%", maxHeight:"600px"}}/>
+                         <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Book Store</h3>
+                         <p style = {{color: "white", fontFamily: "Roboto"}}>Developed this project along with team members as a part of a university project. This is an extension that improves on the robustnestness and realism of the current BookStore website integrated with multiple other applications.</p>
+                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: C# .Net, Data Structures, Algorithms, HTML, CSS, JS, MySQL</p>
+                         <a href="https://github.com/SuKaiwen/BookStoreGroupProject"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
                        </Carousel.Caption>
                      </Carousel.Item>
                    <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
                       <Carousel.Caption>
-                        <img src={weather} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "70%", maxHeight:"500px"}}/>
+                        <img src={weather} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "50%", maxHeight:"600px"}}/>
                         <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Weather App</h3>
                         <p style = {{color: "white", fontFamily: "Roboto"}}>Developed an application that displays the weather information for cities around the world. It fetches the information using
                                                                             OpenWeatherAPI and formats it in a dynamic and readable way using React components</p>
                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills:  HTML, CSS, React, Algorithms, JS, Data Structures, API Usage</p>
+                        <a href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
                       </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
