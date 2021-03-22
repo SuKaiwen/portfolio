@@ -14,6 +14,8 @@ import stars from './img/stars.jpg';
 import paint from './img/paint.jpg';
 import flower from './img/flower.jpg';
 import bookstore from './img/bookstore.jpg';
+import work from './img/work.jpg';
+import amazing2 from './img/amazing2.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
@@ -23,149 +25,147 @@ import Card from 'react-bootstrap/Card';
 function App() {
   return (
     <div className="App">
-      <div style = {{backgroundColor: "#fafafa", minHeight:"1000px"}}>
-        <div class="imagecontainer">
-            <img src={mount} style = {{width:"100%", height:"80%", maxHeight:"800px"}}alt="Logo"/>
-            <div class="centered">
-                <h1 style = {{fontSize: "8vw", fontFamily: "Minimum-Impact"}}>Hi I'm Kevin</h1>
-                <h1 style = {{fontSize: "2vw", fontFamily: "Minimum-Impact"}}>Welcome to my Portfolio</h1>
-                <hr style = {{width: "30%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-            </div>
-        </div>
-        <div className="container-fluid" style = {{marginBottom:"50px"}}>
-            <div class = "row" id = "about">
-                <div class = "column" style = {{minHeight: "600px", width: "50%", alignItems:"center"}}>
-                    <img src={profileImg} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
-                    <h1 style = {{fontSize: 60, fontFamily: "Roboto"}}> Kevin Su </h1>
-                    <br></br>
-                    <h5 style = {{fontSize: 20, fontFamily: "Roboto"}}>Mobile: +64 22 584 0669</h5>
-                    <hr style = {{minHeight: "5px"}}></hr>
-                    <h3 style = {{fontFamily: "Roboto", fontSize: 20}}> Linkedin | Github | Email </h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px"}}></i></a>
-                        <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px"}}></i></a>
-                        <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px"}}></i></a>
-                    </div>
-                    <hr style = {{minHeight: "5px"}}></hr>
-                </div>
-                <div class = "column" style = {{minHeight: "600px", alignItems:"center", padding:"10px"}}>
-                    <img src={opera} alt="Logo" style = {{border:"10px solid #fafafa", maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2, marginTop:"50px" }}/>
-                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto", fontSize: "30px"}}>The University of Sydney</h5>
-                    <h5 style = {{textAlign: "center", marginTop:"10px", fontFamily: "Roboto"}}>BEHons(Software) Grad</h5>
-                    <h3 style = {{textAlign: "left", marginTop:"50px", fontFamily: "Roboto"}}> Hi there! </h3>
-                    <h5 style = {{textAlign: "left", fontFamily: "Roboto"}}>I'm Kevin Su, an aspiring web developer from Auckland, New Zealand. I undertook a Bachelor of Software Engineering Honors degree at the University of Sydney and is scheduled to graduate in 2021. I am interested in web development especially the front end aspect.</h5>
-                </div>
-                <div class = "column" style = {{minHeight: "600px", alignItems: "center"}}>
-                    <h3 style = {{marginTop:"50px", fontFamily: "Roboto", fontSize:"40px"}}> Skills </h3>
-                    <hr style = {{marginTop: "10px", width: "50%", backgroundColor: "black", height:"5px"}}></hr>
-                    <div class = "row" style = {{marginBottom:"10px"}}>
-                          <div class = "column">
-                              <i class="fa fa-database fa-5x" style = {{color: "#ff6666"}}></i>
-                              <h5>Database</h5>
-                              <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>MySQL</h5>
-                          </div>
-                          <div class = "column" >
-                              <i class="fab fa-python fa-5x" style = {{color: "#ff6666"}}></i>
-                              <h5>Python</h5>
-                              <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>React, Django, Axios</h5>
-                          </div>
-                      </div>
-                    <div class = "row" style = {{marginBottom:"10px"}}>
-                        <div class = "column" >
-                            <i class="fab fa-html5 fa-5x" style = {{color: "#ff6666"}}></i>
-                            <h5>Web Dev</h5>
-                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>HTML, CSS, React, JS, C#/.Net</h5>
-                        </div>
-                        <div class = "column" >
-                            <i class="fas fa-sitemap fa-5x" style = {{color: "#ff6666"}}></i>
-                            <h5>ORM</h5>
-                            <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Hibernate</h5>
-                        </div>
 
+      <div style = {{backgroundColor: "#fafafa", minHeight:"1000px"}}>
+        <div class = "row" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
+            <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
+                <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
+                   <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>Hi I'm Kevin Su.</h1>
+                   <br></br>
+                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Welcome to my portfolio!</h5>
+                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display"}}>I'm an aspiring web developer from Auckland, New Zealand. I undertook a Bachelor of Software Engineering Honors degree at the University of Sydney and is scheduled to graduate in 2021. I am interested in web development especially the front end aspect.</h5>
+                   <br></br>
+                   <h5 style = {{fontFamily: "Playfair Display"}}>Mobile: +64 22 584 0669</h5>
+                   <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                       <div>
+                           <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
+                           <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
+                           <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
+                       </div>
+                   </div>
+                </div>
+                <div class="five">
+                    <div class = "imagecontainer">
+                         <img src={work} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
+                     </div>
+                </div>
+                <div class="six" style = {{zIndex:"2"}}>
+                    <div class = "imagecontainer">
+                        <img src={profileImg} alt="Logo" style = {{minWidth:"200px", minHeight:"200px"}}/>
                     </div>
-                    <div class = "row">
-                        <div class = "column" >
-                          <i class="fas fa-code fa-5x" style = {{color: "#ff6666"}}></i>
-                          <h5>Code</h5>
-                          <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>C++, Java, MATLAB</h5>
-                      </div>
-                      <div class = "column" >
-                          <i class="fas fa-users fa-5x" style = {{color: "#ff6666"}}></i>
-                          <h5>Interpersonal</h5>
-                          <h5 style = {{textAlign: "center", fontFamily: "Roboto", color: "#606060"}}>Friendly, Positive, Optimistic</h5>
-                      </div>
-                    </div>
+                </div>
+          </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#c85349"}}>
+            <div class = "row70" style = {{backgroundColor:"#c85349", textAlign:"center"}}>
+                <div class = "column">
+                    <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", color:"#FFEEE2", marginBottom:"20px"}}>My Skills</h5>
+                </div>
+            </div>
+            <div class = "row70" style = {{backgroundColor:"#c85349", textAlign:"center"}}>
+                <div class = "column">
+                      <i class="fa fa-database fa-5x" style = {{color:"white"}}></i>
+                      <h5 style = {{color:"#FFEEE2"}}>Database</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>MySQL</h5>
+                  </div>
+                  <div class = "column" >
+                      <i class="fab fa-python fa-5x" style = {{color:"white"}}></i>
+                      <h5 style = {{color:"#FFEEE2"}}>Python</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>React, Django, Axios</h5>
+                  </div>
+                  <div class = "column" >
+                      <i class="fab fa-html5 fa-5x" style = {{color:"white"}}></i>
+                      <h5 style = {{color:"#FFEEE2"}}>Web Dev</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>HTML, CSS, React, JS, C#/.Net</h5>
+                  </div>
+                  <div class = "column" >
+                      <i class="fas fa-sitemap fa-5x" style = {{color:"white"}}></i>
+                      <h5 style = {{color:"#FFEEE2"}}>ORM</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>Hibernate</h5>
+                  </div>
+                  <div class = "column" >
+                    <i class="fas fa-code fa-5x" style = {{color:"white"}}></i>
+                    <h5 style = {{color:"#FFEEE2"}}>Code</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>C++, Java, MATLAB</h5>
+                </div>
+                <div class = "column" >
+                    <i class="fas fa-users fa-5x" style = {{color:"white"}}></i>
+                    <h5 style = {{color:"#FFEEE2"}}>Interpersonal</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>Friendly, Positive, Optimistic</h5>
                 </div>
             </div>
         </div>
-        <div style = {{backgroundColor: "#0C2D48", fontFamily: "Roboto", minHeight:"100%"}} id = "projects">
-            <h3 style = {{backgroundColor: "#0C2D48", minHeight:"40px"}}></h3>
-            <div class = "row">
+        <div class = "row" style = {{backgroundColor:"#FFEEE2", minHeight:"100px"}}>
+            <div class = "row70" style = {{backgroundColor:"#FFEEE2", textAlign:"center"}}>
                 <div class = "column">
-                    <h3 style = {{color: "#cedeef", fontFamily: "Roboto", fontSize: "40px"}}>Projects</h3>
-                    <hr style = {{marginBottom: "80px", width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                    <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", marginTop: "10%", marginBottom:"20px", color:"#c85349"}}>Projects</h5>
+                    <hr style = {{marginBottom: "10px", width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                 </div>
-             </div>
-            <Row style = {{justifyContent:"center", alignItems:"center", textAlign:"center"}}>
-                <Carousel style = {{maxWidth: "1000px", width:"100%", zIndex:"0", marginBottom:"100px"}}>
-                  <Carousel.Item style = {{maxHeight:"700px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                    <Carousel.Caption>
-                      <img src={profileJpg} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "70%", maxHeight:"600px"}}/>
-                      <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Portfolio</h3>
-                      <p style = {{color: "white", fontFamily: "Roboto"}}>Created this portfolio to showcase my projects and you get to learn a little bit more about me!</p>
-                      <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: React, CSS</p>
-                      <a href="https://github.com/SuKaiwen/portfolio"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                      <Carousel.Caption>
-                        <img src={snipsnok2} style = {{zIndex:"0"}} alt="Logo" style = {{width: "35%", maxHeight:"500px"}}/>
-                        <img src={snipsnok}  style = {{zIndex:"0"}} alt="Logo" style = {{width: "35%", maxHeight:"500px"}}/>
-                        <h3 style = {{color: "white", fontFamily: "Roboto"}}>SnipSnok</h3>
-                        <p style = {{color: "white", fontFamily: "Roboto"}}>Created along with team members as a part of a university project! SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
-                        <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: React, Python, Hibernate, Spring, Axios</p>
-                        <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                     <Carousel.Caption>
-                       <img src={amazingrace} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "50%", maxHeight:"600px"}}/>
-                       <h3 style = {{color: "white", fontFamily: "Roboto", marginTop:"20px"}}>Amazing Race</h3>
-                       <p style = {{color: "white", fontFamily: "Roboto"}}>Created along with team members as part of a university assignment! The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</p>
-                       <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</p>
-                       <a href="https://github.com/SuKaiwen/AmazingRace"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                     </Carousel.Caption>
-                   </Carousel.Item>
-                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                       <Carousel.Caption>
-                         <img src={bounce} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "30%", maxHeight:"600px"}}/>
-                         <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Bouncing Balls</h3>
-                         <p style = {{color: "white", fontFamily: "Roboto"}}>Created a physics simulation of bouncing balls within a bounded cube. Created in Processing 3.</p>
-                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: Object Oriented Programming, Algorithms, Data Structures</p>
-                         <a href="https://github.com/SuKaiwen/BouncingBalls"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                       </Carousel.Caption>
-                     </Carousel.Item>
-                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                       <Carousel.Caption>
-                         <img src={bookstore} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "30%", maxHeight:"600px"}}/>
-                         <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Book Store</h3>
-                         <p style = {{color: "white", fontFamily: "Roboto"}}>Developed this project along with team members as a part of a university project. This is an extension that improves on the robustnestness and realism of the current BookStore website integrated with multiple other applications.</p>
-                         <p style = {{color: "white", fontFamily: "Roboto"}}>Skills: C# .Net, Data Structures, Algorithms, HTML, CSS, JS, MySQL</p>
-                         <a href="https://github.com/SuKaiwen/BookStoreGroupProject"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                       </Carousel.Caption>
-                     </Carousel.Item>
-                   <Carousel.Item style = {{maxHeight:"500px", maxWidth:"1000px", minHeight: "500px", minWidth:"400px"}}>
-                      <Carousel.Caption>
-                        <img src={weather} style = {{zIndex:"0", position: "absolute"}} alt="Logo" style = {{width: "50%", maxHeight:"600px"}}/>
-                        <h3 style = {{marginTop: "20px", color: "black", fontFamily: "Roboto", color:"white"}}>Weather App</h3>
-                        <p style = {{color: "white", fontFamily: "Roboto"}}>Developed an application that displays the weather information for cities around the world. It fetches the information using
-                                                                            OpenWeatherAPI and formats it in a dynamic and readable way using React components</p>
-                        <p style = {{color: "white", fontFamily: "Roboto"}}>Skills:  HTML, CSS, React, Algorithms, JS, Data Structures, API Usage</p>
-                        <a href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </Row >
+            </div>
+            <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
+                <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
+                    <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
+                       <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>SnipSnok</h1>
+                       <br></br>
+                       <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Full Stack</h5>
+                       <hr style = {{width: "90%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                       <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display"}}>SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</h5>
+                       <br></br>
+                       <h5 style = {{fontFamily: "Playfair Display"}}>Skills: React, Python, Hibernate, Spring, Axios</h5>
+                       <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                           <div>
+                               <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
+                           </div>
+                           <Button>Learn More</Button>
+                       </div>
+                    </div>
+                    <div class="five">
+                        <div class = "imagecontainer">
+                             <img src={snipsnok} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
+                         </div>
+                    </div>
+                    <div class="six" style = {{zIndex:"2"}}>
+                        <div class = "imagecontainer">
+                            <img src={snipsnok2} alt="Logo" style = {{minWidth:"200px", minHeight:"200px"}}/>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
+                <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
+                  <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
+                     <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>Amazing Race</h1>
+                     <br></br>
+                     <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Front End</h5>
+                     <hr style = {{width: "90%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                     <h5 style = {{textAlign: "left", fontSize:"1.1em", fontFamily: "Playfair Display"}}>The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</h5>
+                     <br></br>
+                     <h5 style = {{fontFamily: "Playfair Display", fontSize:"1.1em"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</h5>
+                     <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                         <div>
+                             <a href="https://github.com/SuKaiwen/AmazingRace"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
+                         </div>
+                         <Button>Learn More</Button>
+                     </div>
+                  </div>
+                  <div class="one">
+                      <div class = "imagecontainer">
+                           <img src={amazingrace} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
+                       </div>
+                  </div>
+                  <div class="two" style = {{zIndex:"0"}}>
+                      <div class = "imagecontainer">
+                          <img src={amazing2} alt="Logo" style = {{maxWidth:"400px", maxHeight:"400px"}}/>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#FFEEE2", minHeight:"100px"}}>
+            <div class = "row80">
+
+            </div>
         </div>
         <h3 style = {{color: "black", fontFamily: "Roboto", marginTop: "40px", fontSize: "40px"}} id = "exp"  >Experience</h3>
         <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
