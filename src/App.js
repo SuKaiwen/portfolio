@@ -16,6 +16,8 @@ import flower from './img/flower.jpg';
 import bookstore from './img/bookstore.jpg';
 import work from './img/work.jpg';
 import amazing2 from './img/amazing2.jpg';
+import nz from './img/nz-01.jpg';
+import me from './img/me.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
@@ -25,18 +27,24 @@ import Card from 'react-bootstrap/Card';
 function App() {
   return (
     <div className="App">
-
-      <div style = {{backgroundColor: "#fafafa", minHeight:"1000px"}}>
-        <div class = "row" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
-            <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}} id = "about">
-                <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
-                   <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>Hi I'm Kevin Su.</h1>
-                   <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Welcome to my portfolio!</h5>
+      <div style = {{backgroundColor: "#ffffff", minHeight:"1000px"}}>
+        <div class = "imagecontainer">
+            <img src={nz} alt="Logo" style = {{width:"80%", marginTop:"5%"}}/>
+            <div class = "centered" style = {{color:"black", textAlign:"left"}}>
+               <h5 style = {{fontSize: "2vw", fontFamily: "Playfair Display"}}>Hi I'm </h5>
+               <h5 style = {{fontSize: "6vw", fontFamily: "Playfair Display", fontWeight:"bold", color:"#ff6666"}}>Kevin Su</h5>
+               <hr style = {{width: "50%", backgroundColor: "black", height:"5px"}}></hr>
+               <h5 style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>An avid learner with a passion for web development</h5>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"100px"}}>
+            <div class = "row70">
+                <div class = "column">
+                   <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display"}}>A Few Words About Me</h5>
                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display"}}>I'm an aspiring web developer from Auckland, New Zealand. I undertook a Bachelor of Software Engineering Honors degree at the University of Sydney and is scheduled to graduate in 2021. I am interested in web development especially the front end aspect.</h5>
-                   <br></br>
-                   <h5 style = {{fontFamily: "Playfair Display"}}>Mobile: +64 22 584 0669</h5>
+                   <h5 style = {{textAlign: "center", fontSize:"2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>Hi, I'm an aspiring web developer from Auckland, New Zealand. Throughout my childhood I have grown to appreciate the visual aspects that this world has to offer. During my five year tenure as a student at Auckland Grammar School I took interest in subjects that enable my creativity such as art and graphical design.</h5>
+                   <h5 style = {{textAlign: "center", fontSize:"1.5em", fontFamily: "Playfair Display", color:"#808080", marginTop:"20px"}}>I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
+                   <h5 style = {{fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Mobile: +64 22 584 0669</h5>
                    <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
                        <div>
                            <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
@@ -45,121 +53,94 @@ function App() {
                        </div>
                    </div>
                 </div>
-                <div class="five">
-                    <div class = "imagecontainer">
-                         <img src={work} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
-                     </div>
-                </div>
-                <div class="six" style = {{zIndex:"2"}}>
-                    <div class = "imagecontainer">
-                        <img src={profileImg} alt="Logo" style = {{minWidth:"200px", minHeight:"200px"}}/>
-                    </div>
-                </div>
-          </div>
-        </div>
-        <div class = "row" style = {{backgroundColor:"#c85349"}}>
-            <div class = "row70" style = {{backgroundColor:"#c85349", textAlign:"center"}}>
-                <div class = "column">
-                    <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", color:"#FFEEE2", marginBottom:"20px"}}>My Skills</h5>
-                </div>
             </div>
-            <div class = "row70" style = {{backgroundColor:"#c85349", textAlign:"center"}}>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#ffffff"}}>
+            <div class = "row80">
+               <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"10%"}}>
+                   <img src={me} alt="Logo" style = {{width:"80%", marginTop:"5%"}}/>
+               </div>
+               <div class = "column" style = {{color:"black", textAlign:"left", padding:"10%"}}>
+                   <br></br>
+                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Education</h5>
+                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>University of Sydney 2017-2021</h5>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}> I first attended The University of Auckland as a first year engineering student before setting my sights overseas. In Australia I undertaken a more specialised degree; Bachelor of Software Engineering Honors at The University of Sydney. Throughout my four year degree I learnt many new things such as
+                   programming principles, methodologies and engineering professionalism. I am scheduled to graduate in mid 2021 and hope to utilize my acquired knowledge in the real world.</h5>
+                   <br></br>
+               </div>
+            </div>
+        </div>
+        <div class = "row70" style = {{marginTop:"100px", textAlign:"left"}}>
+            <div class = "column">
+                <h5 style = {{fontSize: "4em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Skills</h5>
+                <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", color:"#808080"}}>I have the following experience in...</h5>
+                <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
+            <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
                 <div class = "column">
-                      <i class="fa fa-database fa-5x" style = {{color:"white"}}></i>
-                      <h5 style = {{color:"#FFEEE2"}}>Database</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>MySQL</h5>
+                      <i class="fa fa-database fa-5x"></i>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display"}}>Database</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display"}}>MySQL</h5>
                   </div>
                   <div class = "column" >
-                      <i class="fab fa-python fa-5x" style = {{color:"white"}}></i>
-                      <h5 style = {{color:"#FFEEE2"}}>Python</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>React, Django, Axios</h5>
+                      <i class="fab fa-python fa-5x"></i>
+                      <h5>Python</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>React, Django, Axios</h5>
                   </div>
                   <div class = "column" >
-                      <i class="fab fa-html5 fa-5x" style = {{color:"white"}}></i>
-                      <h5 style = {{color:"#FFEEE2"}}>Web Dev</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>HTML, CSS, React, JS, C#/.Net</h5>
+                      <i class="fab fa-html5 fa-5x"></i>
+                      <h5>Web Dev</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>HTML, CSS, React, JS, C#/.Net</h5>
                   </div>
                   <div class = "column" >
-                      <i class="fas fa-sitemap fa-5x" style = {{color:"white"}}></i>
-                      <h5 style = {{color:"#FFEEE2"}}>ORM</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>Hibernate</h5>
+                      <i class="fas fa-sitemap fa-5x"></i>
+                      <h5>ORM</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Hibernate</h5>
                   </div>
                   <div class = "column" >
-                    <i class="fas fa-code fa-5x" style = {{color:"white"}}></i>
-                    <h5 style = {{color:"#FFEEE2"}}>Code</h5>
-                    <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>C++, Java, MATLAB</h5>
+                    <i class="fas fa-code fa-5x"></i>
+                    <h5>Code</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>C++, Java, MATLAB</h5>
                 </div>
                 <div class = "column" >
-                    <i class="fas fa-users fa-5x" style = {{color:"white"}}></i>
-                    <h5 style = {{color:"#FFEEE2"}}>Interpersonal</h5>
-                    <h5 style = {{textAlign: "center", fontFamily: "Roboto", color:"#FFEEE2"}}>Friendly, Positive, Optimistic</h5>
+                    <i class="fas fa-users fa-5x"></i>
+                    <h5>Interpersonal</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Friendly, Positive, Optimistic</h5>
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#FFEEE2", minHeight:"100px"}}>
-            <div class = "row70" style = {{backgroundColor:"#FFEEE2", textAlign:"center"}}>
+        <div class = "row" style = {{backgroundColor:"#1e1e1e", minHeight:"100px", marginTop:"200px"}}>
+            <div class = "row70" style = {{textAlign:"right", color:"white"}}>
                 <div class = "column">
-                    <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", marginTop: "10%", marginBottom:"20px", color:"#c85349"}} id = "projects">Projects</h5>
-                    <hr style = {{marginBottom: "10px", width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                   <h5 style = {{fontSize: "4em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Projects</h5>
+                   <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", color:"#808080"}}>A showcase containing some of the many projects I have developed</h5>
+                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                 </div>
             </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#1e1e1e"}}>
             <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
-                <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
-                    <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
-                       <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>SnipSnok</h1>
-                       <br></br>
-                       <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Full Stack</h5>
-                       <hr style = {{width: "90%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                       <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display"}}>SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</h5>
-                       <br></br>
-                       <h5 style = {{fontFamily: "Playfair Display"}}>Skills: React, Python, Hibernate, Spring, Axios</h5>
-                       <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
-                           <div>
-                               <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                           </div>
-                           <Button>Learn More</Button>
+                <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"5%"}}>
+                   <img src={snipsnok} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+               </div>
+               <div class = "column" style = {{color:"black", textAlign:"left", padding:"10%", color:"white"}}>
+                   <br></br>
+                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>SnipSnok</h5>
+                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"white", fontWeight:"bold"}}>2020</h5>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed along with team members as a part of a university project. SnipSnok is an application designed to help struggling content creators
+                                                                                                                        in Australia. Users can donate to others, follow others and post/like content they enjoy!</h5>
+                   <br></br>
+                   <h5 style = {{fontFamily: "Playfair Display"}}>Skills: Hibernate, MySQL, Java, HTML, CSS, React, Spring, Axios</h5>
+                   <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                       <div>
+                           <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
                        </div>
-                    </div>
-                    <div class="five">
-                        <div class = "imagecontainer">
-                             <img src={snipsnok} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
-                         </div>
-                    </div>
-                    <div class="six" style = {{zIndex:"2"}}>
-                        <div class = "imagecontainer">
-                            <img src={snipsnok2} alt="Logo" style = {{minWidth:"200px", minHeight:"200px"}}/>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
-                <div class="wrapper" style = {{backgroundColor:"#FFEEE2", height:"1000px"}}>
-                  <div class="three" style = {{backgroundColor:"white", padding:"40px", zIndex:"1"}}>
-                     <h1 style = {{fontSize: "3.5em", fontFamily: "Playfair Display"}}>Amazing Race</h1>
-                     <br></br>
-                     <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>Front End</h5>
-                     <hr style = {{width: "90%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                     <h5 style = {{textAlign: "left", fontSize:"1.1em", fontFamily: "Playfair Display"}}>The Amazing Race is a website that mimics the mechanics from the TV show of the same name. Users are able to host races, set locations, reorder locations and participate in races.</h5>
-                     <br></br>
-                     <h5 style = {{fontFamily: "Playfair Display", fontSize:"1.1em"}}>Skills: HTML, CSS, JS, React, Python, AJAX, external API usage</h5>
-                     <div style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
-                         <div>
-                             <a href="https://github.com/SuKaiwen/AmazingRace"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"#FF7F50"}}></i></a>
-                         </div>
-                         <Button>Learn More</Button>
-                     </div>
-                  </div>
-                  <div class="one">
-                      <div class = "imagecontainer">
-                           <img src={amazingrace} alt="Logo" style = {{width:"200%", height:"200%", minWidth:"225px", minHeight:"225px", maxWidth:"400px", maxHeight:"400px"}}/>
-                       </div>
-                  </div>
-                  <div class="two" style = {{zIndex:"0"}}>
-                      <div class = "imagecontainer">
-                          <img src={amazing2} alt="Logo" style = {{maxWidth:"400px", maxHeight:"400px"}}/>
-                      </div>
-                  </div>
-              </div>
+                   </div>
+               </div>
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#FFEEE2", minHeight:"100px"}}>

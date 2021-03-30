@@ -5,32 +5,33 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function NavigationBar() {
   return (
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark" style = {{position: "fixed",
+    <nav class="navbar navbar-expand-md bg-light navbar-light" style = {{position: "fixed",
                                                                          top: "0",
                                                                          width: "100%",
                                                                          zIndex:"5"}}>
-      <a class="navbar-brand" style = {{ color: "#5288DB" }} >KS</a>
-      <a class="navbar-brand" style = {{ color: "#F5FAFA" }} >Kevin Su</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" style = {{ color: "#5288DB", marginLeft:"10%"}} >KS</a>
+      <a class="navbar-brand" style = {{ color: "black", fontWeight:"bold" }} >Kevin Su</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style = {{color:"black"}}>
+        <span class="navbar-toggler-icon" style = {{textcolor:"black"}}></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar" style={{
                                                                            flexDirection: "row",
                                                                            justifyContent: "flex-end",
-                                                                           marginRight: "50px"
+                                                                           marginRight: "5%",
+                                                                           color: "black"
                                                                          }}>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about" style = {{marginRight: "50px"}}>About</a>
+            <a class="nav-link" href="#about" style = {{marginRight: "40px", color: "black", fontWeight:"bold"}}>About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects" style = {{marginRight: "50px"}}>Projects</a>
+            <a class="nav-link" href="#projects" style = {{marginRight: "40px", color: "black", fontWeight:"bold"}}>Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#exp" style = {{marginRight: "50px"}}>Experience</a>
+            <a class="nav-link" href="#exp" style = {{marginRight: "40px", color: "black", fontWeight:"bold"}}>Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#con" style = {{marginRight: "50px"}}>Contact</a>
+            <a class="nav-link" href="#con" style = {{marginRight: "40px", color: "black", fontWeight:"bold"}}>Contact</a>
           </li>
         </ul>
       </div>
