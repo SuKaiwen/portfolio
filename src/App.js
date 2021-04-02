@@ -38,6 +38,11 @@ function App() {
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"100px"}}>
+            <div class = "row70" style = {{justifyContent:"center", alignItems:"center"}}>
+                <img src={profileImg} alt="Logo" style = {{borderRadius:"50%"}}/>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px"}}>
             <div class = "row70">
                 <div class = "column">
                    <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display"}}>A Few Words About Me</h5>
@@ -143,72 +148,45 @@ function App() {
                </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#FFEEE2", minHeight:"100px"}}>
-            <div class = "row70" style = {{textAlign:"center", justifyContent: "center", alignItems:"center"}}>
-                <h3 style = {{fontFamily: "Playfair Display", fontSize: "40px", color:"#c85349"}} id = "exp"  >Experience</h3>
+        <div class = "row70" style = {{marginTop:"50px", textAlign:"left"}}>
+            <div class = "column">
+                <h5 style = {{fontSize: "4em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Experience</h5>
+                <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
             </div>
-            <hr style = {{marginBottom: "10px", width: "50%", backgroundColor: "#ff6666", height:"5px", marginBottom:"80px"}}></hr>
-            <div class = "row80" style = {{minHeight:"600px"}}>
-                <div class = "column" style = {{alignItems:"center", marginBottom:'20px'}}>
-                    <Card style={{ width: '90%', height:"auto", textAlign:"left"}}>
-                         <Card.Body>
-                           <div style = {{textAlign:"center", marginBottom:"30px"}}>
-                            <i class="fas fa-tasks fa-5x" style = {{color: "#ff6666"}}></i>
-                           </div>
-                           <Card.Title style = {{color: "black", fontSize:"25px"}}>Assistant Manager</Card.Title>
-                           <Card.Text >
-                             <h3 style = {{color: "black", fontSize:"15px"}}>Eden Foods Limited</h3>
-                             <h3 style = {{color: "black", fontSize:"15px"}}>2016 - 2018</h3>
-                             <hr></hr>
-                             Aided in stock management and control of the daily workflow within the store
-                             to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.
-                             <hr></hr>
-                             <h3 style = {{color: "black", fontSize:"15px"}}>Location: Auckland, NZ</h3>
-                           </Card.Text>
-                         </Card.Body>
-                       </Card>
-                 </div>
-                 <div class = "column" style = {{alignItems:"center", marginBottom:'20px'}}>
-                     <Card style={{ width: '90%', height:"auto", textAlign:"left"}}>
-                        <Card.Body>
-                          <div style = {{textAlign:"center", marginBottom:"30px"}}>
-                            <i class="fas fa-cog fa-5x" style = {{color: "#ff6666"}}></i>
-                          </div>
-                          <Card.Title style = {{color: "black", fontSize:"25px"}}>Unit Testing Intern</Card.Title>
-                          <Card.Text >
-                            <h3 style = {{color: "black",fontSize:"15px"}}>GPOS Limited</h3>
-                            <h3 style = {{color: "black", fontSize:"15px"}}>Dec 2018 - Feb 2019</h3>
-                            <hr></hr>
-                            Performed black box testing on a general point of sales software application using Postman and manually testing the application itself.
-                            <hr></hr>
-                            <h3 style = {{color: "black", fontSize:"15px"}}>Location: Auckland, NZ</h3>
-                          </Card.Text>
-                        </Card.Body>
-                      </Card>
-                  </div>
-                  <div class = "column" style = {{alignItems:"center", marginBottom:'20px'}}>
-                       <Card style={{ width: '90%', height:"auto", textAlign:"left"}}>
-                          <Card.Body>
-                            <div style = {{textAlign:"center", marginBottom:"30px"}}>
-                            <i class="fas fa-file-code fa-5x" style = {{color: "#ff6666"}}></i>
-                           </div>
-                            <Card.Title style = {{color: "black", fontSize:"25px"}}>Front End Intern</Card.Title>
-                            <Card.Text >
-                              <h3 style = {{color: "black", fontSize:"15px"}}>GPOS Limited</h3>
-                              <h3 style = {{color: "black", fontSize:"15px"}}>Dec 2019 - Feb 2020</h3>
-                              <hr></hr>
-                              Developed templates for a payments screen using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote
-                              extensive integration and unit tests for the created payments screen. Engaged with Agile Methodologies (weekly sprints). Improved
-                              presentation skills via presenting the product to the team.
-                              <hr></hr>
-                              <h3 style = {{color: "black", fontSize:"15px"}}>Location: Auckland, NZ</h3>
-                            </Card.Text>
-                          </Card.Body>
-                        </Card>
-                   </div>
-              </div>
         </div>
-        <div class = "row" style = {{backgroundColor: "#c85349"}} id = "con">
+        <div class = "row70" style = {{marginTop:"50px", textAlign:"left"}}>
+            <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+               <br></br>
+               <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Customer Service</h5>
+               <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Eden Foods Limited</h5>
+               <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>2016-2018</h5>
+               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Aided in stock management and control of the daily workflow within the store
+                                                                                                                   to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.</h5>
+                                                                                                                   <br></br>
+           </div>
+           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+              <br></br>
+              <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Unit Testing Intern</h5>
+              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
+              <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Dec 2018- Feb 2019</h5>
+              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Performed black box and unit testing on a software application using Postman and manually testing the application itself.</h5>
+              <br></br>
+          </div>
+           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+              <br></br>
+              <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Frontend Intern</h5>
+              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
+              <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Dec 2019- Feb 2020</h5>
+              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed templates for a payments screen using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote
+                                                                                                                                                 extensive integration and unit tests for the created payments screen. Engaged with Agile Methodologies (weekly sprints). Improved
+                                                                                                                                                 presentation skills via presenting the product to the team.</h5>
+                                                                                                                                                 <br></br>
+          </div>
+        </div>
+        <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px"}} id = "con">
              <div class = "row70">
                 <div class = "column">
                     <h3 style = {{color: "white", fontSize: "40px", marginTop:"50px"}}>Contact Me</h3>

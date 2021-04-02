@@ -9,7 +9,7 @@ function NavigationBar() {
                                                                          top: "0",
                                                                          width: "100%",
                                                                          zIndex:"5"}}>
-      <a class="navbar-brand" style = {{ color: "#5288DB", marginLeft:"10%"}} >KS</a>
+      <a class="navbar-brand" style = {{ color: "#c85349", marginLeft:"10%"}} >KS</a>
       <a class="navbar-brand" style = {{ color: "black", fontWeight:"bold" }} >Kevin Su</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style = {{color:"black"}}>
         <span class="navbar-toggler-icon" style = {{textcolor:"black"}}></span>
