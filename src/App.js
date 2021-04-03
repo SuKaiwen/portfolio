@@ -29,7 +29,7 @@ import Card from 'react-bootstrap/Card';
 function App() {
   return (
     <div className="App">
-      <div style = {{backgroundColor: "#ffffff", minHeight:"1000px"}}>
+      <div style = {{backgroundColor: "#ffffff", minHeight:"1000px"}} id = "top">
         <div class = "imagecontainer">
             <img src={mountain} alt="Logo" style = {{width:"101%", height:"50%"}}/>
             <div class = "centered" style = {{color:"white", textAlign:"left"}}>
@@ -39,21 +39,25 @@ function App() {
             </div>
             <div class = "centered" style = {{marginTop:"15%"}}>
                 <div class = "zoom">
-                    <a href="#about"><i class="fas fa-chevron-down" style = {{color:"white"}}></i></a>
+                    <a href="#about"><i class="fas fa-chevron-down" style = {{color:"white"}} id = "about"></i></a>
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"100px"}} id = "about">
-            <div class = "row70" style = {{justifyContent:"center", alignItems:"center"}}>
-                <img src={profileImg} alt="Logo" style = {{borderRadius:"50%"}}/>
+        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"100px"}} >
+            <div class = "row70" >
+                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
+                    <img src={profileImg} alt="Logo" style = {{borderRadius:"50%", width:"200px", height:"200px"}}/>
+                </div>
+
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px"}}>
-            <div class = "row60">
+            <div class = "row50">
                 <div class = "column">
                    <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display"}}>A Few Words About Me</h5>
                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                   <h5 style = {{textAlign: "center", fontSize:"25px", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>Hi, I'm an aspiring web developer from Auckland, New Zealand. Throughout my childhood I have grown to appreciate the visual aspects that this world has to offer. During my five year tenure as a student at Auckland Grammar School I took interest in subjects that enable my creativity such as art and graphical design.</h5>
+
+                   <h5 style = {{textAlign: "center", fontSize:"22px", fontFamily: "Playfair Display", color:"black"}}>Hi, I'm an aspiring web developer from Auckland, New Zealand. Throughout my childhood I have grown to appreciate the visual aspects that this world has to offer. During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
                    <h5 style = {{textAlign: "center", fontSize:"18px", fontFamily: "Playfair Display", color:"#808080", marginTop:"20px"}}>I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
                    <h5 style = {{fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Mobile: +64 22 584 0669</h5>
                    <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
@@ -71,14 +75,14 @@ function App() {
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px"}}>
-            <div class = "row60" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
+            <div class = "row50" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
                 <div class = "column">
                    <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", letterSpacing:"5px"}}>IN SHORT I AM ...</h5>
                 </div>
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#ffffff"}}>
-            <div class = "row60" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
+            <div class = "row50" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
                 <div class = "column" style = {{padding:"10px"}}>
                    <i class="fas fa-code fa-4x" style = {{color:"white"}}></i>
                    <h5 style = {{fontSize: "15px", fontFamily: "Playfair Display", marginTop:"20px"}}>PASSIONATE WEB DEVELOPER</h5>
@@ -103,9 +107,10 @@ function App() {
                </div>
                <div class = "column" style = {{color:"black", textAlign:"left", padding:"10%"}}>
                    <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>EDUCATION</h5>
+                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>EDUCATION</h5>
                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>University of Sydney 2017-2021</h5>
+                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>BEHons(Software)</h5>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}> I first attended The University of Auckland as a first year engineering student before setting my sights overseas. In Australia I undertaken a more specialised degree; Bachelor of Software Engineering Honors at The University of Sydney. Throughout my four year degree I learnt many new things such as
                    programming principles, methodologies and engineering professionalism. I am scheduled to graduate in mid 2021 and hope to utilize my acquired knowledge in the real world.</h5>
                    <br></br>
@@ -140,7 +145,6 @@ function App() {
                       <div class = "zoom3">
                         <i class="fab fa-html5 fa-5x"></i>
                       </div>
-
                       <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Web Dev</h5>
                       <h5 style = {{textAlign: "center", fontFamily: "Roboto", fontSize:"14px"}}>HTML, CSS, React, JS, C#/.Net</h5>
                   </div>
@@ -170,17 +174,15 @@ function App() {
         <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
             <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
                 <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <a class = "button" style = {{width:"200px"}}href="Resume.pdf">DOWNLOAD RESUME</a>
+                      <a class = "button" href="Resume.pdf">DOWNLOAD RESUME</a>
                   </div>
             </div>
         </div>
-
         <div class = "row" style = {{backgroundColor:"#1e1e1e", minHeight:"100px", marginTop:"100px"}} id = "projects">
-            <div class = "row70" style = {{textAlign:"right", color:"white"}}>
+            <div class = "row70" style = {{textAlign:"right", color:"white", marginTop:"100px"}} >
                 <div class = "column">
                    <h5 style = {{fontSize: "3em", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"12px"}}>PROJECTS</h5>
                    <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", color:"#808080"}}>A showcase containing some of the many projects I have developed</h5>
-                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                 </div>
             </div>
         </div>
@@ -250,39 +252,47 @@ function App() {
             </div>
         </div>
         <div class = "row70" style = {{marginTop:"50px", textAlign:"left"}} id = "exp">
-            <div class = "column">
+            <div class = "column" style = {{marginTop:"50px", textAlign:"left"}}>
                 <h5 style = {{fontSize: "3em", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"12px"}}>EXPERIENCE</h5>
-                <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
             </div>
         </div>
-        <div class = "row70" style = {{marginTop:"50px", textAlign:"left"}}>
-            <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+        <div class = "row80" style = {{marginTop:"50px", textAlign:"left"}}>
+            <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+               <div class="icon-wrapper">
+                   <i class="fas fa-users fa"></i>
+               </div>
                <br></br>
-               <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Customer Service</h5>
-               <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Eden Foods Limited</h5>
+               <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Customer Service</h5>
+               <h5 style = {{fontSize: "1.1em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Eden Foods Limited</h5>
                <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>2016-2018</h5>
-               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Aided in stock management and control of the daily workflow within the store
+               <h5 style = {{fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>2016-2018</h5>
+               <h5 style = {{fontSize:"1em", fontFamily: "Playfair Display", color:"#808080"}}>Aided in stock management and control of the daily workflow within the store
                                                                                                                    to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.</h5>
                                                                                                                    <br></br>
            </div>
-           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+              <div class="icon-wrapper">
+                 <i class="fas fa-cog"></i>
+              </div>
               <br></br>
-              <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Unit Testing Intern</h5>
-              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
+              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Unit Testing Intern</h5>
+              <h5 style = {{fontSize: "1.1em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
               <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Dec 2018- Feb 2019</h5>
-              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Performed black box and unit testing on a software application using Postman and manually testing the application itself.</h5>
+              <h5 style = {{textAlign: "left", fontSize:"1em", fontFamily: "Playfair Display", color:"#808080"}}>Performed black box and unit testing on a software application using Postman and manually testing the application itself.</h5>
               <br></br>
           </div>
-           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black"}}>
+           <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+              <div class="icon-wrapper">
+                   <i class="fas fa-code"></i>
+                </div>
               <br></br>
-              <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Frontend Intern</h5>
-              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
+              <h5 style = {{fontSize: "1.25em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Frontend Intern</h5>
+              <h5 style = {{fontSize: "1.1em", fontFamily: "Playfair Display", fontWeight:"bold"}}>GPOS Limited</h5>
               <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
               <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Dec 2019- Feb 2020</h5>
-              <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed templates for a payments screen using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote
-                                                                                                                                                 extensive integration and unit tests for the created payments screen. Engaged with Agile Methodologies (weekly sprints). Improved
+              <h5 style = {{textAlign: "left", fontSize:"1em", fontFamily: "Playfair Display", color:"#808080"}}>Developed templates using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote
+                                                                                                                                                 extensive integration and unit tests for the templates. Engaged with Agile Methodologies. Improved
                                                                                                                                                  presentation skills via presenting the product to the team.</h5>
                                                                                                                                                  <br></br>
           </div>
@@ -298,15 +308,32 @@ function App() {
                 <div class = "column" style = {{minHeight:"200px"}}>
                      <h3 style = {{color: "white", fontSize:"20px"}}>Let's get in touch!</h3>
                      <h3 style = {{color: "white", fontSize:"20px", marginTop:"20px"}}>Mobile: +64 22 584 0669</h3>
-                     <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color:"white"}}></i></a>
-                     <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px", color:"white"}}></i></a>
-                     <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px", color:"white"}}></i></a>
+                     <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                        <div class = "zoom2">
+                            <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        </div>
+                        <div class = "zoom2">
+                            <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        </div>
+                        <div class = "zoom2">
+                            <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        </div>
+                    </div>
                  </div>
                 <div class = "column" style = {{minHeight:"350px", alignItems:"center", textAlign:"left"}}>
                     <img src={cat} alt="Logo" style = {{maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2 }}/>
                     <h3 style = {{color: "white", fontSize:"20px", marginTop:"20px"}}>Thank you for making it all the way to the end!</h3>
                 </div>
              </div>
+             <div class = "row70">
+                 <div class = "column" style = {{minHeight:"100px", justifyContent:"center", alignItems:"center"}}>
+                    <div class = "zoom">
+                        <a href="#top"><i class="fas fa-chevron-up" style = {{color:"white"}}></i></a>
+                    </div>
+                    <h3 style = {{color: "white", fontSize:"15px", marginTop:"20px"}}>Back to top!</h3>
+                  </div>
+              </div>
+
             </div>
         </div>
     </div>
