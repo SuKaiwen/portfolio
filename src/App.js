@@ -29,36 +29,43 @@ import Card from 'react-bootstrap/Card';
 function App() {
   return (
     <div className="App">
-      <div style = {{backgroundColor: "#ffffff", minHeight:"1000px"}} id = "top">
-        <div class = "imagecontainer">
-            <img src={mountain} alt="Logo" style = {{width:"101%", height:"50%"}}/>
-            <div class = "centered" style = {{color:"white", textAlign:"left"}}>
-               <h5 class = "titleani" style = {{fontSize: "2vw", fontFamily: "Playfair Display"}}>Hi I'm </h5>
-               <h5 class = "titleani" style = {{fontSize: "6vw", fontFamily: "Playfair Display", fontWeight:"bold", color:"#ff6666"}}>KEVIN SU</h5>
-               <h5 class = "titleani" style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>An avid learner with a passion for web development</h5>
-            </div>
-            <div class = "centered" style = {{marginTop:"15%"}}>
-                <div class = "zoom">
-                    <a href="#about"><i class="fas fa-chevron-down" style = {{color:"white"}} id = "about"></i></a>
+        <div class = "row" style = {{height:"800px"}}>
+            <div class = "column" style = {{height:"100%"}}>
+                <div class = "parallax2">
+                    <div class = "centered" style = {{color:"white", textAlign:"left"}}>
+                       <h5 style = {{fontSize: "6vw", fontFamily: "Playfair Display", fontWeight:"bold", color:"white", letterSpacing:"1vw"}}>KEVIN SU</h5>
+                       <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                       <h5 style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>Welcome to my portfolio!</h5>
+                    </div>
+                    <div class = "centered" style = {{marginTop:"15%"}}>
+                        <div class = "zoom">
+                            <a href="#about"><i class="fas fa-chevron-down" style = {{color:"white"}}></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"100px"}} >
+        <div class = "row" style = {{backgroundColor:"#ffffff"}} id = "about">
             <div class = "row70" >
-                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                    <img src={profileImg} alt="Logo" style = {{borderRadius:"50%", width:"200px", height:"200px"}}/>
+                <div class = "column" style = {{textAlign:"left", marginTop:"100px"}}>
+                    <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>ABOUT ME</h5>
+                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>A few words from me...</h5>
                 </div>
-
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px"}}>
-            <div class = "row50">
-                <div class = "column">
-                   <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display"}}>A Few Words About Me</h5>
-                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-
-                   <h5 style = {{textAlign: "center", fontSize:"22px", fontFamily: "Playfair Display", color:"black"}}>Hi, I'm an aspiring web developer from Auckland, New Zealand. Throughout my childhood I have grown to appreciate the visual aspects that this world has to offer. During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
-                   <h5 style = {{textAlign: "center", fontSize:"18px", fontFamily: "Playfair Display", color:"#808080", marginTop:"20px"}}>I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
+        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px", marginBottom:"80px"}}>
+            <div class = "row70">
+                <div class = "column" style = {{color:"black", alignItems:"center"}}>
+                      <img src={me} alt="Logo" style = {{width:"200px", height:"200px", borderRadius:"50%"}}/>
+                      <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", marginTop:"20px"}}>KEVIN SU</h5>
+                      <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                      <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>University of Sydney 2017-2021</h5>
+                      <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>BEHons(Software) Grad</h5>
+                </div>
+                <div class = "column" style = {{textAlign:"left", padding:"10px"}}>
+                   <h5 style = {{fontSize:"22px", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>I'm an avid learner with a passion for web development.</h5>
+                   <h5 style = {{fontSize:"1em", fontFamily: "Playfair Display", color:"#808080", marginTop:"20px"}}>I'm an aspiring web developer from Auckland, New Zealand. Throughout my childhood I have grown to appreciate the visual aspects that this world has to offer. During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
+                   <h5 style = {{fontSize:"1em", fontFamily: "Playfair Display", color:"#808080", marginTop:"20px"}}>I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
                    <h5 style = {{fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Mobile: +64 22 584 0669</h5>
                    <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
                        <div class = "zoom2">
@@ -74,53 +81,15 @@ function App() {
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff", marginTop:"50px"}}>
-            <div class = "row50" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
-                <div class = "column">
-                   <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", letterSpacing:"5px"}}>IN SHORT I AM ...</h5>
-                </div>
-            </div>
-        </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff"}}>
-            <div class = "row50" style = {{backgroundColor:"#e7e7e7", color:"black"}}>
-                <div class = "column" style = {{padding:"10px"}}>
-                   <i class="fas fa-code fa-4x" style = {{color:"white"}}></i>
-                   <h5 style = {{fontSize: "15px", fontFamily: "Playfair Display", marginTop:"20px"}}>PASSIONATE WEB DEVELOPER</h5>
-                </div>
-                <div class = "column" style = {{padding:"10px"}}>
-                   <i class="fas fa-edit fa-4x" style = {{color:"white"}}></i>
-                   <h5 style = {{fontSize: "15px", fontFamily: "Playfair Display", marginTop:"20px"}}>ART / UX ADMIRER</h5>
-                </div>
-                <div class = "column" style = {{padding:"10px", textAlign:"center", alignItems:"center", justifyContent:"center"}}>
-                   <h5 style = {{fontSize: "15px", fontFamily: "Playfair Display"}}>AND LEAST IMPORTANTLY...</h5>
-                </div>
-                <div class = "column" style = {{padding:"10px", justifyContent:"center", alignItems:"center"}}>
-                   <img src={chally} alt="Logo" style = {{borderRadius:"50%", width:"80px", height:"80px"}}/>
-                   <h5 style = {{fontSize: "15px", fontFamily: "Playfair Display", marginTop:"20px"}}>OCE's GREATEST TFT PLAYER</h5>
-                </div>
-            </div>
-        </div>
-        <div class = "row" style = {{backgroundColor:"#ffffff"}}>
-            <div class = "row80">
-               <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"10%"}}>
-                   <img src={me} alt="Logo" style = {{width:"80%", marginTop:"5%"}}/>
-               </div>
-               <div class = "column" style = {{color:"black", textAlign:"left", padding:"10%"}}>
-                   <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display"}}>EDUCATION</h5>
-                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>University of Sydney 2017-2021</h5>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"black", fontWeight:"bold"}}>BEHons(Software)</h5>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}> I first attended The University of Auckland as a first year engineering student before setting my sights overseas. In Australia I undertaken a more specialised degree; Bachelor of Software Engineering Honors at The University of Sydney. Throughout my four year degree I learnt many new things such as
-                   programming principles, methodologies and engineering professionalism. I am scheduled to graduate in mid 2021 and hope to utilize my acquired knowledge in the real world.</h5>
-                   <br></br>
-               </div>
+        <div class = "row">
+            <div class = "column">
+                <div class = "parallax2" style = {{height:"100px"}}></div>
             </div>
         </div>
         <div class = "row70" style = {{marginTop:"100px", textAlign:"left"}}>
             <div class = "column">
-                <h5 style = {{fontSize: "3em", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"12px"}}>SKILLS</h5>
-                <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", color:"#808080"}}>I have experience in the following...</h5>
+                <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>SKILLS</h5>
+                <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>Aside from inverting a binary tree, I also have experience in...</h5>
                 <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
             </div>
         </div>
@@ -130,59 +99,62 @@ function App() {
                       <div class = "zoom3">
                         <i class="fa fa-database fa-5x"></i>
                       </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Database</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Database</h5>
                       <h5 style = {{textAlign: "center", fontFamily: "Playfair Display"}}>MySQL</h5>
                   </div>
                   <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                       <div class = "zoom3">
                           <i class="fab fa-python fa-5x"></i>
                         </div>
-
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Python</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Python</h5>
                       <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>React, Django, Axios</h5>
                   </div>
                   <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                       <div class = "zoom3">
                         <i class="fab fa-html5 fa-5x"></i>
                       </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Web Dev</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Web Dev</h5>
                       <h5 style = {{textAlign: "center", fontFamily: "Roboto", fontSize:"14px"}}>HTML, CSS, React, JS, C#/.Net</h5>
                   </div>
-                  <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
+            <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
+                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                       <div class = "zoom3">
                           <i class="fas fa-sitemap fa-5x"></i>
                         </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>ORM</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>ORM</h5>
                       <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Hibernate</h5>
                   </div>
                   <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                     <div class = "zoom3">
                       <i class="fas fa-code fa-5x"></i>
                     </div>
-                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Code</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Code</h5>
                     <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>C++, Java, MATLAB</h5>
                 </div>
                 <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                     <div class = "zoom3">
                       <i class="fas fa-users fa-5x"></i>
                     </div>
-                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px"}}>Interpersonal</h5>
+                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Interpersonal</h5>
                     <h5 style = {{textAlign: "center", fontFamily: "Roboto", fontSize:"16px"}}>Friendly, Positive, Optimistic</h5>
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
+        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px", marginBottom:"50px"}}>
             <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
                 <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                       <a class = "button" href="Resume.pdf">DOWNLOAD RESUME</a>
                   </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"#1e1e1e", minHeight:"100px", marginTop:"100px"}} id = "projects">
+        <div class = "row" style = {{backgroundColor:"#1e1e1e", minHeight:"100px"}} id = "projects">
             <div class = "row70" style = {{textAlign:"right", color:"white", marginTop:"100px"}} >
                 <div class = "column">
-                   <h5 style = {{fontSize: "3em", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"12px"}}>PROJECTS</h5>
-                   <h5 style = {{fontSize: "1.5em", fontFamily: "Playfair Display", color:"#808080"}}>A showcase containing some of the many projects I have developed</h5>
+                   <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>PROJECTS</h5>
+                   <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>A showcase containing some of the many projects I have developed</h5>
                 </div>
             </div>
         </div>
@@ -251,9 +223,9 @@ function App() {
                </div>
             </div>
         </div>
-        <div class = "row70" style = {{marginTop:"50px", textAlign:"left"}} id = "exp">
+        <div class = "row70" style = {{textAlign:"left"}} id = "exp">
             <div class = "column" style = {{marginTop:"50px", textAlign:"left"}}>
-                <h5 style = {{fontSize: "3em", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"12px"}}>EXPERIENCE</h5>
+                <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>EXPERIENCE</h5>
             </div>
         </div>
         <div class = "row80" style = {{marginTop:"50px", textAlign:"left"}}>
@@ -300,7 +272,7 @@ function App() {
         <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px"}} id = "con">
              <div class = "row70">
                 <div class = "column">
-                    <h3 style = {{color: "white", fontSize: "40px", marginTop:"50px"}}>Contact Me</h3>
+                    <h3 style = {{color: "white", fontSize: "25px", marginTop:"50px", letterSpacing:"10px"}}>CONTACT ME</h3>
                     <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
                 </div>
              </div>
@@ -336,7 +308,6 @@ function App() {
 
             </div>
         </div>
-    </div>
   );
 }
 
