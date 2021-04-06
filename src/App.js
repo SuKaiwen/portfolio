@@ -4,6 +4,17 @@ import profileImg from './img/link.jpg';
 import profileJpg from './img/Profile.jpg';
 import snipsnok from './img/snipsnok.jpg';
 import snipsnok2 from './img/snipsnok2.jpg';
+import snipsnok3 from './img/snipsnok3.jpg';
+import snipsnok4 from './img/snipsnok4.jpg';
+import snipsnok5 from './img/snipsnok5.jpg';
+import snipsnok6 from './img/snipsnok6.jpg';
+import snipsnok7 from './img/snipsnok7.jpg';
+import snipsnok8 from './img/snipsnok8.jpg';
+import snipsnok9 from './img/snipsnok9.jpg';
+import snipsnok10 from './img/snipsnok10.jpg';
+import snipsnok11 from './img/snipsnok11.jpg';
+import snipsnok12 from './img/snipsnok12.jpg';
+
 import opera from './img/opera.jpg';
 import cat from './img/coot.jpg';
 import mountain from './img/mountain.jpg'
@@ -23,16 +34,33 @@ import me from './img/me.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
 function App() {
   return (
     <div className="App">
-        <div class = "row" style = {{height:"800px"}}>
-            <div class = "column" style = {{height:"100%"}}>
+        <div class = "row">
+            <div class = "column" style = {{height:"100vh"}}>
                 <div class = "parallax2">
-                    <div class = "centered" style = {{color:"white", textAlign:"left"}}>
+                    <div class = "centered" style = {{color:"white", textAlign:"center"}}>
                        <h5 style = {{fontSize: "6vw", fontFamily: "Playfair Display", fontWeight:"bold", color:"white", letterSpacing:"1vw"}}>KEVIN SU</h5>
                        <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                        <h5 style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>Welcome to my portfolio!</h5>
@@ -160,12 +188,10 @@ function App() {
         </div>
         <div class = "row" style = {{backgroundColor:"#1e1e1e"}}>
             <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
-               <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"5%"}}>
-                   <img src={snipsnok} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
-               </div>
                <div class = "column" style = {{color:"black", textAlign:"left", padding:"5%", color:"white"}}>
                    <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>SnipSnok</h5>
+                   <h5 style = {{fontSize: "30px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px", color:"#808080"}}>01</h5>
+                   <h5 style = {{fontSize: "20px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px"}}>SNIPSNOK</h5>
                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"white", fontWeight:"bold"}}>2020</h5>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed along with team members as a part of a university project. SnipSnok is an application designed to help struggling content creators
@@ -178,16 +204,58 @@ function App() {
                        </div>
                    </div>
                </div>
+               <div class = "column">
+
+               </div>
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#1e1e1e"}}>
-            <div class = "row70rev" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
-              <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"5%"}}>
-                  <img src={profileJpg} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
-              </div>
-               <div class = "column" style = {{color:"black", textAlign:"left", padding:"5%", color:"white"}}>
+            <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
+                <div class="gridRow" style = {{justifyContent:"center"}}>
+                  <div class="gridColumn">
+                      <img src={snipsnok6} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                      <img src={snipsnok8} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                      <img src={snipsnok4} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                      <img src={snipsnok5} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                    </div>
+                  <div class="gridColumn">
+                    <img src={snipsnok} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                    <img src={snipsnok9} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                  </div>
+                  <div class = "gridColumn">
+                    <img src={snipsnok7} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                    <img src={snipsnok3} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                  </div>
+                  <div class = "gridColumn">
+                      <img src={snipsnok11} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                      <img src={snipsnok12} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "row" style = {{backgroundColor:"#1e1e1e"}}>
+            <div class = "row70" style = {{textAlign:"left"}}>
+               <div class = "column" style = {{color:"white", padding:"5%"}}>
+                  <br></br>
+                  <h5 style = {{fontSize: "30px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px", color:"#808080"}}>02</h5>
+                  <h5 style = {{fontSize: "20px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px"}}>WEATHER APP</h5>
+                  <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                  <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"white", fontWeight:"bold"}}>2020</h5>
+                  <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed an application that displays the weather information for cities around the world. It fetches the information using
+                                                                                                                       OpenWeatherAPI and formats it in a dynamic and readable way using React components.
+                   </h5><br></br>
+                  <h5 style = {{fontFamily: "Playfair Display"}}>Skills: HTML, CSS, React, Algorithms, JavaScript, Data Structures, API Usage</h5>
+                  <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                      <div class = "zoom2">
+                          <a href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
+                      </div>
+                  </div>
+                  <img src={weather} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
+               </div>
+               <div class = "column" style = {{color:"white", padding:"5%"}}>
                    <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Portfolio</h5>
+                   <h5 style = {{fontSize: "30px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px", color:"#808080"}}>03</h5>
+                   <h5 style = {{fontSize: "20px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"8px"}}>PORTFOLIO</h5>
                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"white", fontWeight:"bold"}}>2021</h5>
                    <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Created this portfolio all on my own to showcase my projects and let you get to know a little more about myself. This portfolio is hosted on AWS S3.</h5>
@@ -198,28 +266,7 @@ function App() {
                            <a href="https://github.com/SuKaiwen/portfolio"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
                        </div>
                    </div>
-               </div>
-            </div>
-        </div>
-        <div class = "row" style = {{backgroundColor:"#1e1e1e"}}>
-            <div class = "row70" style = {{alignItems:"center", justifyContent:"center", textAlign:"left"}}>
-               <div class = "column" style = {{color:"black", justifyContent:"center", alignItems:"center", padding:"5%"}}>
-                   <img src={weather} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
-               </div>
-               <div class = "column" style = {{color:"black", textAlign:"left", padding:"5%", color:"white"}}>
-                   <br></br>
-                   <h5 style = {{fontSize: "2em", fontFamily: "Playfair Display", fontWeight:"bold"}}>Real Time Weather Application</h5>
-                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"white", fontWeight:"bold"}}>2020</h5>
-                   <h5 style = {{textAlign: "left", fontSize:"1.2em", fontFamily: "Playfair Display", color:"#808080"}}>Developed an application that displays the weather information for cities around the world. It fetches the information using
-                                                                                                                        OpenWeatherAPI and formats it in a dynamic and readable way using React components.
-</h5><br></br>
-                   <h5 style = {{fontFamily: "Playfair Display"}}>Skills: HTML, CSS, React, Algorithms, JavaScript, Data Structures, API Usage</h5>
-                   <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
-                       <div class = "zoom2">
-                           <a href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "#ff6666"}}></i></a>
-                       </div>
-                   </div>
+                    <img src={profileJpg} alt="Logo" style = {{width:"100%", marginTop:"5%"}}/>
                </div>
             </div>
         </div>
