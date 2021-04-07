@@ -7,10 +7,15 @@
   pointer-events: none;
 }
 
+.learningIcon{
+    width:80%;
+    max-width:250px;
+}
+
 .button {
-  background-color: white;
-  border: 1.5px solid black;
-  color: black;
+  background-color: rgba(255,255,255,0.4);
+  border: 1.5px solid white;
+  color: white;
   padding: 15px 32px;
   width: 200px;
   text-align: center;
@@ -19,13 +24,11 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  transition: transform 1s;
 }
 
 .button:hover{
     background-color:#1e1e1e;
     color:white;
-    transform: scale(1.1);
 }
 
 .zoomDiv{
@@ -85,6 +88,7 @@
         margin-bottom:-40px;
     }
 }
+
 
 .bluebox{
     width: 80%;
@@ -158,13 +162,8 @@
 }
 
 .parallax {
-  /* The image used */
-  background-image: url('img/dark.jpg');
-
-  /* Full height */
-  height: 100vh;
-
-  /* Create the parallax scrolling effect */
+  background-image: url('img/work.jpg');
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -172,13 +171,8 @@
 }
 
 .parallax2 {
-  /* The image used */
   background-image: url('img/back.jpg');
-
-  /* Full height */
   height: 100%;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

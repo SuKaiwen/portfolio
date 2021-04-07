@@ -1,5 +1,4 @@
 import './App.css';
-import backgroundImg from './img/wp.jpg';
 import profileImg from './img/link.jpg';
 import profileJpg from './img/Profile.jpg';
 import snipsnok from './img/snipsnok.jpg';
@@ -15,44 +14,19 @@ import snipsnok10 from './img/snipsnok10.jpg';
 import snipsnok11 from './img/snipsnok11.jpg';
 import snipsnok12 from './img/snipsnok12.jpg';
 
-import opera from './img/opera.jpg';
 import cat from './img/coot.jpg';
-import mountain from './img/mountain.jpg'
-import mount from './img/mount3.jpg';
-import chally from './img/chally.jpg';
-import amazingrace from './img/amazingrace.jpg';
 import bounce from './img/bounce.jpg';
 import weather from './img/weather.jpg';
-import stars from './img/stars.jpg';
-import paint from './img/paint.jpg';
-import flower from './img/flower.jpg';
-import bookstore from './img/bookstore.jpg';
 import work from './img/work.jpg';
-import amazing2 from './img/amazing2.jpg';
-import nz from './img/nz-01.jpg';
 import me from './img/me.jpg';
+import udemy from './img/udemy.jpg';
+import youtube from './img/youtube.jpg';
+import freecodecamp from './img/freecodecamp.jpg';
+import w3school from './img/w3school.jpg';
 
 import { Row, Col } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1 // optional, default to 1.
-  }
-};
 
 function App() {
   return (
@@ -63,7 +37,7 @@ function App() {
                     <div class = "centered" style = {{color:"white", textAlign:"center"}}>
                        <h5 style = {{fontSize: "6vw", fontFamily: "Playfair Display", fontWeight:"bold", color:"white", letterSpacing:"1vw"}}>KEVIN SU</h5>
                        <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
-                       <h5 style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>Welcome to my portfolio!</h5>
+                       <h5 style = {{fontSize:"2vw", fontFamily: "Playfair Display"}}>WELCOME TO MY PORTFOLIO</h5>
                     </div>
                     <div class = "centered" style = {{marginTop:"15%"}}>
                         <div class = "zoom">
@@ -110,15 +84,47 @@ function App() {
             </div>
         </div>
         <div class = "row">
-            <div class = "column">
-                <div class = "parallax2" style = {{height:"100px"}}></div>
+            <div class = "column" style = {{height:"200px"}}>
+                <div class = "parallax" style = {{color:"white"}}>
+                    <div class = "column" style = {{justifyContent:"center", alignItems:"center", height:"200px"}}>
+                         <a class = "button" href="Resume.pdf">DOWNLOAD RESUME</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class = "row70" style = {{marginTop:"100px", textAlign:"left"}}>
-            <div class = "column">
-                <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>SKILLS</h5>
-                <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>Aside from inverting a binary tree, I also have experience in...</h5>
-                <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+        <div class = "row" style = {{backgroundColor:"white"}}>
+            <div class = "row70">
+                <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px"}}>
+                    <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>LEARNING</h5>
+                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>I love to learn new things. Resources I use include...</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row" style = {{backgroundColor:"white"}}>
+            <div class = "row80">
+                <div class = "column" style = {{textAlign:"left", alignItems:"center", justifyContent:"center", color:"black", marginTop:"30px"}}>
+                    <img src={udemy} class = "learningIcon" alt="Logo"/>
+                </div>
+                <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <img src={youtube} class = "learningIcon" alt="Logo"/>
+                </div>
+                <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <img src={freecodecamp} class = "learningIcon" alt="Logo"/>
+                </div>
+                <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <img src={w3school} class = "learningIcon" alt="Logo"/>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "row70" style = {{marginTop:"100px", textAlign:"left"}}>
+                <div class = "column">
+                    <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>MY SKILLS</h5>
+                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>Aside from inverting a binary tree, I also have experience in...</h5>
+                    <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+                </div>
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
@@ -172,11 +178,6 @@ function App() {
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"white", marginTop:"50px", marginBottom:"50px"}}>
-            <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
-                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <a class = "button" href="Resume.pdf">DOWNLOAD RESUME</a>
-                  </div>
-            </div>
         </div>
         <div class = "row" style = {{backgroundColor:"#1e1e1e", minHeight:"100px"}} id = "projects">
             <div class = "row70" style = {{textAlign:"right", color:"white", marginTop:"100px"}} >
@@ -339,8 +340,11 @@ function App() {
                         </div>
                     </div>
                  </div>
-                <div class = "column" style = {{minHeight:"350px", alignItems:"center", textAlign:"left"}}>
+                <div class = "column" style = {{minHeight:"250px", alignItems:"center", textAlign:"left"}}>
                     <img src={cat} alt="Logo" style = {{maxWidth:"200px", maxHeight:"200px", borderRadius: 300/ 2 }}/>
+
+                </div>
+                <div class = "column">
                     <h3 style = {{color: "white", fontSize:"20px", marginTop:"20px"}}>Thank you for making it all the way to the end!</h3>
                 </div>
              </div>
