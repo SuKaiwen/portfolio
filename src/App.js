@@ -141,7 +141,7 @@ function App() {
                           <i class="fab fa-python fa-5x"></i>
                         </div>
                       <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Python</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>React, Django, Axios</h5>
+                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Django, Axios</h5>
                   </div>
                   <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
                       <div class = "zoom3">
