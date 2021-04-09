@@ -122,59 +122,99 @@ function App() {
             <div class = "row70" style = {{marginTop:"100px", textAlign:"left"}}>
                 <div class = "column">
                     <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px"}}>MY SKILLS</h5>
-                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>Aside from inverting a binary tree, I also have experience in...</h5>
+                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080"}}>I have other skills on top of inverting a binary tree!</h5>
                     <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                 </div>
             </div>
         </div>
-        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
+        <div class = "row" style = {{backgroundColor:"white"}}>
             <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
                 <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <div class = "zoom3">
-                        <i class="fa fa-database fa-5x"></i>
-                      </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Database</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display"}}>MySQL</h5>
-                  </div>
-                  <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <div class = "zoom3">
-                          <i class="fab fa-python fa-5x"></i>
+                    <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080", marginBottom:"20px", marginTop:"10px"}}>I'm comfortable working with...</h5>
+                    <div class = "row" style = {{width:"100%", justifyContent:"center"}}>
+                        <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                            <div class = "zoom3">
+                               <i class="fab fa-python fa-4x" style = {{color:"#00008b"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>Python</h5>
+                            </div>
+                            <div class = "zoom3">
+                               <i class="fab fa-html5 fa-4x" style = {{color:"#ff8c00"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>HTML</h5>
+                            </div>
+                            <div class = "zoom3">
+                                <i class="fab fa-css3-alt fa-4x" style = {{color:"#0000ff"}}></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>CSS</h5>
+                            </div>
                         </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Python</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Django, Axios</h5>
-                  </div>
-                  <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <div class = "zoom3">
-                        <i class="fab fa-html5 fa-5x"></i>
-                      </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Web Dev</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto", fontSize:"14px"}}>HTML, CSS, React, JS, C#/.Net</h5>
-                  </div>
-            </div>
-        </div>
-        <div class = "row" style = {{backgroundColor:"white", marginTop:"50px"}}>
-            <div class = "row70" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
-                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <div class = "zoom3">
-                          <i class="fas fa-sitemap fa-5x"></i>
+                        <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                            <div class = "zoom3">
+                               <i class="fab fa-sass fa-4x" style = {{color:"#db7083"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>SASS</h5>
+                            </div>
+                            <div class = "zoom3">
+                               <i class="fab fa-bootstrap fa-4x" style = {{color:"#442a5d"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>BootStrap</h5>
+                            </div>
+                            <div class = "zoom3">
+                                <i class="fab fa-react fa-4x" style = {{color:"#00fbfb"}}></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>React</h5>
+                            </div>
                         </div>
-                      <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>ORM</h5>
-                      <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>Hibernate</h5>
+                        <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                            <div class = "zoom3">
+                               <i class="fab fa-js-square fa-4x" style = {{color:"#ffea00"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>JavaScript</h5>
+                            </div>
+                            <div class = "zoom3">
+                               <i class="fab fa-java fa-4x" style = {{color:"#00008b"}}></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>Java</h5>
+                            </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                    <div class = "zoom3">
-                      <i class="fas fa-code fa-5x"></i>
-                    </div>
-                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Code</h5>
-                    <h5 style = {{textAlign: "center", fontFamily: "Roboto"}}>C++, Java, MATLAB</h5>
-                </div>
-                <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                    <div class = "zoom3">
-                      <i class="fas fa-users fa-5x"></i>
-                    </div>
-                    <h5 style = {{textAlign: "center", fontFamily: "Playfair Display", marginTop:"20px", fontWeight:"bold"}}>Interpersonal</h5>
-                    <h5 style = {{textAlign: "center", fontFamily: "Roboto", fontSize:"16px"}}>Friendly, Positive, Optimistic</h5>
-                </div>
+                 <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
+                  <h5 style = {{fontSize: "18px", fontFamily: "Playfair Display", color:"#808080", marginBottom:"20px", marginTop:"10px"}}>I also have experience in...</h5>
+                  <div class = "row" style = {{width:"100%", justifyContent:"center"}}>
+                      <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                          <div class = "zoom3">
+                             <i class="fa fa-database fa-4x" ></i>
+                             <h5 style = {{textAlign: "center", fontSize:"15px"}}>MySQL</h5>
+                          </div>
+                          <div class = "zoom3">
+                              <i class="fab fa-angular fa-4x"></i>
+                              <h5 style = {{textAlign: "center", fontSize:"15px"}}>Angular</h5>
+                          </div>
+                          <div class = "zoom3">
+                                <i class="fas fa-code fa-4x"></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>C++</h5>
+                           </div>
+                      </div>
+                      <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                          <div class = "zoom3">
+                             <i class="fas fa-sitemap fa-4x"></i>
+                             <h5 style = {{textAlign: "center", fontSize:"15px"}}>Hibernate</h5>
+                          </div>
+                          <div class = "zoom3">
+                              <i class="fas fa-file-code fa-4x"></i>
+                              <h5 style = {{textAlign: "center", fontSize:"15px"}}>jQuery, Redux</h5>
+                         </div>
+                         <div class = "zoom3">
+                               <i class="fas fa-code fa-4x"></i>
+                               <h5 style = {{textAlign: "center", fontSize:"15px"}}>MATLAB</h5>
+                          </div>
+                      </div>
+                      <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                          <div class = "zoom3">
+                             <i class="fas fa-network-wired fa-4x"></i>
+                             <h5 style = {{textAlign: "center", fontSize:"15px"}}>Axios</h5>
+                          </div>
+                          <div class = "zoom3">
+                                <i class="fas fa-code fa-4x"></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>C#/.Net</h5>
+                           </div>
+                      </div>
+                   </div>
+                 </div>
             </div>
         </div>
         <div class = "row" style = {{backgroundColor:"white", marginTop:"50px", marginBottom:"50px"}}>

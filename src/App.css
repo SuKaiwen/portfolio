@@ -340,20 +340,6 @@
        }
    }
 
-.column2{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    min-height: 450px;
-}@media screen and (min-width: 900px) {
-   .column2{
-       display: flex;
-       flex-direction: column;
-       flex-basis: 100%;
-       min-height: 0px;
-   }
- }
-
 .column {
   display: flex;
   flex-direction: column;
@@ -362,8 +348,15 @@
 
 @media screen and (min-width: 900px) {
   .column {
-    flex: 1
+    flex: 1;
   }
+}
+
+.column2{
+    display:flex;
+    flex-direction:column;
+    flex: 33%;
+    max-width: 33%;
 }
 
 .carousel-control-prev-icon,
