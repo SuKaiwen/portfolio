@@ -12,7 +12,7 @@ import Top from './Components/top';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{fontFamily: "Playfair Display"}}>
         <Top />
         <AboutMe />
         <Projects />

@@ -7,14 +7,16 @@ const Footer = () => {
       <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px"}} id = "con">
          <div class = "row70">
             <div class = "column">
-                <h3 style = {{color: "white", fontSize: "25px", marginTop:"50px", letterSpacing:"10px"}}>CONTACT ME</h3>
+                <h5 className="numbering" style={{marginTop:"50px", color:"white"}}>05 | 05</h5>
+                <h3 style = {{color: "white", fontSize: "25px", letterSpacing:"10px", marginTop:"30px", }}>CONTACT ME</h3>
                 <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
             </div>
          </div>
          <div class = "row70">
             <div class = "column" style = {{minHeight:"200px"}}>
                  <h3 style = {{color: "white", fontSize:"20px"}}>Let's get in touch!</h3>
-                 <h3 style = {{color: "white", fontSize:"20px", marginTop:"20px"}}>Mobile: +64 22 584 0669</h3>
+                 <br />
+                 <h3 style = {{color: "white", fontSize:"20px"}}>Mobile: (+22) 584 0669</h3>
                  <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
                     <div class = "zoom2">
                         <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "white"}}></i></a>

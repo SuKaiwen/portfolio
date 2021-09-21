@@ -3,8 +3,9 @@ import React from 'react';
 const Experience = () => {
     return (
         <>
-            <div class = "row70" style = {{textAlign:"left"}} id = "exp">
-                <div class = "column" style = {{marginTop:"50px", textAlign:"left"}}>
+            <div class = "row80" style = {{textAlign:"left"}} id = "exp">
+                <div class = "column" style = {{marginTop:"100px", textAlign:"left"}}>
+                    <h5 className="numbering">04 | 05</h5>
                     <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>EXPERIENCE</h5>
                 </div>
             </div>
