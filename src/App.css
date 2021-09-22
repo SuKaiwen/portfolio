@@ -213,6 +213,26 @@
   background-size: cover;
 }
 
+.parallax3{
+  background-image: url('img/landscape.jpg');
+  height: 100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  display:flex;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display:flex;
+}
+
+.white{
+  color:"white";
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -346,6 +366,7 @@
     max-width:80%;
     width: 80%;
     justify-content: space-between;
+    padding: 10px;
 }@media screen and (min-width: 900px){
     .row80{
         display: flex;
@@ -379,6 +400,53 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  padding: 0px 10px 0px 10px;
+}
+
+.skills{
+  height:300vh;
+  margin-top:150px;
+}
+
+.skillsHeader{
+  padding:40px;
+  height:80vh;
+  text-align:left;
+}
+
+.skillsSpace{
+  height:40vh;
+}
+
+.skillsMain{
+  padding:40px;
+  height:100vh;
+}
+
+.skillsTextSpace{
+  height:230vh;
+}
+
+@media (min-width:0) and (max-width: 900px){
+  .skills{
+    height:1100px;
+  }
+
+  .skillsTextSpace{
+    height:200vh;
+  }
+  
+  .skillsSpace{
+    display:none;
+  }
+
+  .skillsHeader{
+    height:30vh;
+  }
+
+  .skillsSpace{
+    height:300px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -387,11 +455,18 @@
   }
 }
 
+@media screen and (max-width:900px){
+  .parallax3{
+    display:none;
+  }
+}
+
 .column2{
     display:flex;
     flex-direction:column;
     flex: 33%;
     max-width: 33%;
+    margin-top:20px;
 }
 
 .carousel-control-prev-icon,
@@ -572,7 +647,24 @@
 
 .bodyText{
   font-size:18px;
-  color:#808080;
+  color:black;
+  font-weight: 550;
+}
+
+.experienceText{
+  font-size:14px;
+  color:black;
+  font-weight: 550;
+}
+
+.experienceHeader{
+  font-size:20px;
+  color:black;
+  font-weight: 550;
+}
+
+.projectsCard{
+  min-height: 400px;
 }
 
 .bodyImportant{
@@ -586,6 +678,7 @@
 
 .bodyName{
   font-size:35px;
+  font-weight: bold;
 }
 
 .badge{

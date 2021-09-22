@@ -39,12 +39,12 @@ const AboutMe = () => {
                             <p class="badge badge-primary">Version Control</p>
                             <p class="badge badge-primary">UI/UX to some extent...</p>
                         </div>
-                        <h5 className="bodyImportant">I'm an avid learner with a passion for web development.</h5>
-                        <br />
-                        <h5 className="bodyText">I'm a web developer from Auckland, New Zealand. During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
-                        <h5 className="bodyText">I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
-                        <br />
-                        <h5 className="bodyText">And if you're curious my personality type is <span className="badge badge-success">ESFP</span></h5>
+                        <div>
+                            <p class="badge badge-success">Passionate</p>
+                            <p class="badge badge-success">Fast Learner</p>
+                            <p class="badge badge-success">Ambitious</p>
+                        </div>
+                        
                         <br />
                         <h5 className="bodyTitle">Mobile: (+22) 584 0669</h5>
                         <br />
@@ -60,8 +60,13 @@ const AboutMe = () => {
                            </div>
                        </div>
                     </div>
-                    <div class = "column">
-                       <img src={landscape} className="imageMain" alt="landscape" />
+                    <div class = "column" style = {{textAlign:"left"}}>
+                        <br />
+                        <h5 className="bodyText">I'm a web developer from <span style={{color:"blue"}}>Auckland, New Zealand.</span> During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
+                        <h5 className="bodyText">I have an interest in all aspects of web development (both frontend and backend) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
+                        <br />
+                        <h5 className="bodyText">And if you're curious my personality type is <span className="badge badge-success">ESFP</span></h5>
+                        
                     </div>
                 </div>
             </div>
@@ -84,35 +89,45 @@ const AboutMe = () => {
             </div>
 
             <div class = "row" style = {{backgroundColor:"white"}}>
-                <div class = "row70">
-                    <div class = "column" style = {{textAlign:"left", alignItems:"center", justifyContent:"center", color:"black", marginTop:"30px"}}>
+                <div class = "row80">
+                    <div class = "column" style = {{textAlign:"left",marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={udemy} class = "learningIcon" alt="Logo"/>
+                        
+                        <p className="bodyText">Udemy is a good source of knowledge about all things programming!</p>
                     </div>
-                    <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <div class = "column" style = {{textAlign:"left",marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={youtube} class = "learningIcon" alt="Logo"/>
+                        
+                        <p className="bodyText">From Youtube, I learnt the core concepts of React and many CSS tricks!</p>
                     </div>
-                    <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <div class = "column" style = {{textAlign:"left", marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={freecodecamp} class = "learningIcon" alt="Logo"/>
+                        
+                        <p className="bodyText">Great tutorial on React and frontend development frameworks like SCSS.</p>
                     </div>
-                    <div class = "column" style = {{textAlign:"left", color:"black", marginTop:"30px", alignItems:"center", justifyContent:"center"}}>
+                    <div class = "column" style = {{textAlign:"left", marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={w3school} class = "learningIcon" alt="Logo"/>
+                        
+                        <p className="bodyText">Source of my roots, from learning basic HTML, CSS and JS back in 2018!</p>
                     </div>
                 </div>
             </div>
 
-            <div class = "row">
-                <div class = "row80" style = {{marginTop:"100px", textAlign:"left"}}>
-                    <div class = "column">
-                        <h5 className="bodyName">MY SKILLS</h5>
-                        <h5 className="bodyText">Below is a quick overview of my main technical skills and tools I like to use!</h5>
-                        <hr style = {{width: "100%", backgroundColor: "#ff6666", height:"5px"}}></hr>
+            <div class="row skills">
+                <div class="column">
+                    <div class = "parallax3" style={{height:"100vh"}}>
                     </div>
                 </div>
-            </div>
-            <div class = "row" style = {{backgroundColor:"white"}}>
-                <div class = "row80" style = {{backgroundColor:"white", textAlign:"center", color:"black"}}>
+                <div class="column skillsTextSpace">
+                    <div className="skillsSpace">
+                    </div>
+                    <div className="skillsHeader">
+                        <h5 className="bodyName">SKILLS </h5>
+                        <h5 className="bodyText">Below is a quick overview of my main technical skills and tools I like to use..</h5>
+                    </div>
+                    <div classname="skillsMain">
                     <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                        <h5 style = {{fontSize: "18px", color:"#808080", marginBottom:"20px", marginTop:"10px"}}>I'm comfortable working with...</h5>
+                        <h5 className="bodyText">I'm comfortable working with... <i class="fas fa-heart" style={{color:"#ff6666"}}></i></h5>
                         <div class = "row" style = {{width:"100%", justifyContent:"space-between"}}>
                             <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                                 <div class = "zoom3">
@@ -152,55 +167,54 @@ const AboutMe = () => {
                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>Java</h5>
                                 </div>
                             </div>
-                         </div>
-                      </div>
-                     <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
-                      <h5 style = {{fontSize: "18px", color:"#808080", marginBottom:"20px", marginTop:"10px"}}>I also have experience in...</h5>
-                      <div class = "row" style = {{width:"100%", justifyContent:"center"}}>
-                          <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                            </div>
+                            <h5 className="bodyText" style={{marginTop:"100px"}}>I also have experience in... <i class="fas fa-thumbs-up" style={{color:"#ff6666"}}></i></h5>
+                        
+                            <div class = "row" style = {{width:"100%", justifyContent:"space-between"}}>
+                            <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                               <div class = "zoom3">
-                                 <i class="fa fa-database fa-4x" ></i>
+                                 <i class="fa fa-database fa-4x" style={{color:"green"}}></i>
                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>MySQL</h5>
                               </div>
                               <div class = "zoom3">
-                                  <i class="fab fa-angular fa-4x"></i>
+                                  <i class="fab fa-angular fa-4x" style={{color:"red"}}></i>
                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>Angular</h5>
                               </div>
                               <div class = "zoom3">
-                                    <i class="fas fa-code fa-4x"></i>
+                                    <i class="fas fa-code fa-4x" style={{color:"blue"}}></i>
                                     <h5 style = {{textAlign: "center", fontSize:"15px"}}>C++</h5>
                                </div>
                           </div>
                           <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                               <div class = "zoom3">
-                                 <i class="fas fa-sitemap fa-4x"></i>
+                                 <i class="fas fa-sitemap fa-4x" style={{color:"#ff8c00"}}></i>
                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Hibernate</h5>
                               </div>
                               <div class = "zoom3">
-                                  <i class="fas fa-file-code fa-4x"></i>
-                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>jQuery, Redux</h5>
+                                  <i class="fas fa-file-code fa-4x" style={{color:"yellow"}}></i>
+                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Redux</h5>
                              </div>
                              <div class = "zoom3">
-                                   <i class="fas fa-code fa-4x"></i>
+                                   <i class="fas fa-code fa-4x" style = {{color:"#db7083"}}></i>
                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>MATLAB</h5>
                               </div>
                           </div>
                           <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                               <div class = "zoom3">
-                                 <i class="fas fa-network-wired fa-4x"></i>
+                                 <i class="fas fa-network-wired fa-4x" style = {{color:"#00fbfb"}}></i>
                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Axios</h5>
                               </div>
                               <div class = "zoom3">
-                                    <i class="fas fa-code fa-4x"></i>
+                                    <i class="fas fa-code fa-4x" style = {{color:"#442a5d"}}></i>
                                     <h5 style = {{textAlign: "center", fontSize:"15px"}}>C#/.Net</h5>
                                </div>
                           </div>
-                       </div>
-                     </div>
+                         </div>
+                      </div>
+                    </div>
                 </div>
             </div>
-            <div class = "row" style = {{backgroundColor:"white", marginTop:"50px", marginBottom:"50px"}}>
-            </div>
+            
         </>
     )
 }

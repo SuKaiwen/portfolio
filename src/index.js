@@ -7,13 +7,14 @@ import NavigationBar from './NavigationBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavigationBar />
-    <div class = "back">
-        <div class = "main-wrapper">
-            <App />
-        </div>
+    <div style={{fontFamily: "Montserrat"}}>
+      <NavigationBar />
+      <div class = "back">
+          <div class = "main-wrapper">
+              <App />
+          </div>
+      </div>
     </div>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

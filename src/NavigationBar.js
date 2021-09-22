@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function NavigationBar() {
   return (
-    <nav class="navbar navbar-expand-md navbar-dark" style = {{position: "fixed", top: "0", width: "100%", zIndex:"5", backgroundColor:"rgba(52, 52, 52, 0.8)", color:"white"
+    <nav class="navbar navbar-expand-md navbar-dark" style = {{position: "fixed", top: "0", width: "100%", zIndex:"5", backgroundColor:"#00000d", color:"white"
                                                                          }}>
       <a class="navbar-brand" style = {{ color: "white", marginLeft:"10%"}} >KS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

@@ -21,7 +21,7 @@ const Projects = () => {
                 <div class = "row80" style = {{color:"white", marginTop:"150px"}} >
                     <div class = "column" style={{textAlign:"left"}}>
                         <h5 className="numbering">03 | 05</h5>
-                        <h5 style = {{fontSize: "25px", fontFamily: "Playfair Display", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>PROJECTS</h5>
+                        <h5 style = {{fontSize: "25px", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>PROJECTS</h5>
                         <h5 className="projectsText">A showcase containing some of the many projects I have developed</h5>
                     </div>
                 </div>
@@ -29,6 +29,7 @@ const Projects = () => {
             <div class="row">
                 <div class="row80" style={{textAlign:"left"}}>
                     <div class="col-md-4">
+                        <div className="projectsCard">
                         <img src={snipsnok} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
                         <div style={{display:"flex", justifyContent:"space-between"}}>
@@ -47,7 +48,9 @@ const Projects = () => {
                             <p className="projectsSmall badge badge-success">Axios</p>
                         </div>
                         <p className="projectsSmall">Developed alongside team members, SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
+                        </div>
                         <br />
+
                         <img src={artica} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
                         <div style={{display:"flex", justifyContent:"space-between"}}>
@@ -80,6 +83,7 @@ const Projects = () => {
                         <br />
                     </div>
                     <div class="col-md-4">
+                        <div className="projectsCard">
                         <img src={world2} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
                         <div style={{display:"flex", justifyContent:"space-between"}}>
@@ -98,6 +102,7 @@ const Projects = () => {
                        country data an external API and displayed on a React frontend. 
                        Users can view countries via continent or search for them. Users can also filter results by alphabetical order 
                        or population.</p>
+                        </div>
                        <br />
                        <img src={watch} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
@@ -131,6 +136,7 @@ const Projects = () => {
                         
                     </div>
                     <div class="col-md-4">
+                        <div className="projectsCard">
                         <img src={travel3} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
                         <div style={{display:"flex", justifyContent:"space-between"}}>
@@ -147,6 +153,7 @@ const Projects = () => {
                         </div>
                         <p className="projectsSmall">Travel Companion is a travel assistance application that helps users identify various restaurants and hotels within
                        their local area or a place upon lookup. The users are able to filter result by rating (stars) and price ($$$).</p>
+                       </div>
                        <br />
                        <img src={portfolio} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
@@ -161,7 +168,7 @@ const Projects = () => {
                             <p className="projectsSmall badge badge-success">JS</p>
                             <p className="projectsSmall badge badge-success">Bootstrap CSS</p>
                         </div>
-                        <p className="projectsSmall">Created this portfolio to showcase my projects and let you get to know a little more about myself. This portfolio is hosted on AWS S3. The majority of the CSS is done by hand and there is minimal library usage.</p>
+                        <p className="projectsSmall">Created this portfolio to showcase my projects and let you get to know a little more about myself. This portfolio is hosted on AWS S3. The majority of the CSS is done by hand with minimal library usage.</p>
                         <br />
                        <img src={osrs} alt="Logo" style = {{width:"100%"}}/>
                         <hr />
