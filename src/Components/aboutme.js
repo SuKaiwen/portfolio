@@ -18,7 +18,7 @@ const AboutMe = () => {
                             <img src={me} alt="Logo" style = {{width:"200px", height:"200px", borderRadius:"50%", marginBottom:"20px"}}/>
                             <p className="numbering">02 | 05</p>
                             <h5 className="title">ABOUT ME</h5>
-                            <h5 className="subtitle2">A few words from me...</h5>
+                            <h5 className="subtitle2">A few words from me.s..</h5>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const AboutMe = () => {
                             <p class="badge badge-primary">HTML</p>
                             <p class="badge badge-primary">CSS</p>
                             <p class="badge badge-primary">JavaScript</p>
-                            <p class="badge badge-primary">API Handling</p>
+                            <p class="badge badge-primary">API</p>
                             <p class="badge badge-primary">Version Control</p>
                             <p class="badge badge-primary">UI/UX to some extent...</p>
                         </div>

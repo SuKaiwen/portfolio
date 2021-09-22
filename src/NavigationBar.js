@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function NavigationBar() {
   return (
-    <nav class="navbar navbar-expand-md navbar-dark" style = {{position: "fixed", top: "0", width: "100%", zIndex:"5", backgroundColor:"#00000d", color:"white"
+    <nav class="navbar navbar-expand-md navbar-dark" style = {{position: "fixed", textAlign:"left", top: "0", width: "100%", zIndex:"5", backgroundColor:"#00000d", color:"white"
                                                                          }}>
       <a class="navbar-brand" style = {{ color: "white", marginLeft:"10%"}} >KS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -14,7 +14,7 @@ function NavigationBar() {
       <div class="collapse navbar-collapse" id="collapsibleNavbar" style={{
                                                                            flexDirection: "row",
                                                                            justifyContent: "flex-end",
-                                                                           marginRight: "5%"
+                                                                           marginRight:"5%"
                                                                          }}>
         <ul class="navbar-nav">
           <li class="nav-item">

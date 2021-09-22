@@ -9,10 +9,12 @@ import Experience from './Components/experience';
 import Projects from './Components/projects';
 import AboutMe from './Components/aboutme';
 import Top from './Components/top';
+import NavigationBar from './NavigationBar';
 
 function App() {
   return (
-    <div className="App" style={{fontFamily: "Montserrat"}}>
+    <div className="App">
+        <NavigationBar />
         <Top />
         <AboutMe />
         <Projects />

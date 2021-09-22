@@ -15,7 +15,7 @@ import osrs from '../img/osrs.jpg';
 
 const Projects = () => {
     return (
-        <div style={{backgroundColor:"#00000d"}}>
+        <div style={{backgroundColor:"#00000d", width:"100%"}}>
             
             <div class = "row" style = {{minHeight:"100px", marginBottom:"80px"}} id = "projects">
                 <div class = "row80" style = {{color:"white", marginTop:"150px"}} >
