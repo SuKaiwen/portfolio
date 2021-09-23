@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Nav } from 'reactstrap';
 import { ProgressBar, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 

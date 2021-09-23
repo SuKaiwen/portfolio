@@ -4,10 +4,7 @@ import snipsnok from '../img/snipsnok.jpg';
 import world2 from '../img/world2.jpg';
 import brain from '../img/brain.jpg';
 import travel3 from '../img/travel3.jpg';
-import news1 from '../img/news1.jpg';
-import bookstore1 from '../img/bookstore1.jpg';
 import weather from '../img/weather.jpg';
-import profileJpg from '../img/Profile.jpg';
 import artica from '../img/artica.jpg';
 import watch from '../img/watch.jpg';
 import portfolio from '../img/portfolio.jpg';
@@ -15,13 +12,12 @@ import osrs from '../img/osrs.jpg';
 
 const Projects = () => {
     return (
-        <div style={{backgroundColor:"#00000d", width:"100%"}}>
-            
+        <div style={{backgroundColor:"#00000d", width:"100%"}}>       
             <div class = "row" style = {{minHeight:"100px", marginBottom:"80px"}} id = "projects">
                 <div class = "row80" style = {{color:"white", marginTop:"150px"}} >
                     <div class = "column" style={{textAlign:"left"}}>
                         <h5 className="numbering">03 | 05</h5>
-                        <h5 style = {{fontSize: "25px", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>PROJECTS</h5>
+                        <h5 className="subHeader">PROJECTS</h5>
                         <h5 className="projectsText">A showcase containing some of the many projects I have developed</h5>
                     </div>
                 </div>
@@ -35,7 +31,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">SnipSnok</p>
                             <p className="projectsText">2020</p>
-                            <a href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/SnipSnok"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">Hibernate</p>
@@ -56,7 +52,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Artica</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/Artica"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/Artica"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -71,7 +67,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Track my Brain</p>
                             <p className="projectsText">2019</p>
-                            <a href="https://bitbucket.org/peterliang/usyd19p38/src/master/"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://bitbucket.org/peterliang/usyd19p38/src/master/"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -89,7 +85,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Countries of the World</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/WorldCountries"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/WorldCountries"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -109,7 +105,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Regal</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/Watchsite"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/Watchsite"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -124,7 +120,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Weather</p>
                             <p className="projectsText">2019</p>
-                            <a href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/weather"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -142,7 +138,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">Travel Companion</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/TravelCompanion"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/TravelCompanion"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -160,7 +156,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">My Portfolio</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/Portfolio"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/Portfolio"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>
@@ -175,7 +171,7 @@ const Projects = () => {
                         <div style={{display:"flex", justifyContent:"space-between"}}>
                             <p className="projectsText">OSRS Beastiary</p>
                             <p className="projectsText">2021</p>
-                            <a href="https://github.com/SuKaiwen/Old-School-Runescape-App"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
+                            <a target="_blank" href="https://github.com/SuKaiwen/Old-School-Runescape-App"><i class="fab fa-github fa-2x" style = {{color: "#ff6666"}}></i></a>
                         </div>
                         <div>
                             <p className="projectsSmall badge badge-success">HTML/CSS</p>

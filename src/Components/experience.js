@@ -4,13 +4,13 @@ const Experience = () => {
     return (
         <>
             <div class = "row80" style = {{textAlign:"left"}} id = "exp">
-                <div class = "column" style = {{marginTop:"100px", textAlign:"left"}}>
+                <div className = "column experienceTopSection">
                     <h5 className="numbering">04 | 05</h5>
-                    <h5 style = {{fontSize: "25px", fontWeight:"bold", letterSpacing:"10px", marginTop:"30px"}}>EXPERIENCE</h5>
+                    <h5 className="subHeader">EXPERIENCE</h5>
                 </div>
             </div>
             <div class = "row80" style = {{marginTop:"50px", textAlign:"left"}}>
-                <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+                <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300">
                    <div class="icon-wrapper">
                        <i class="fas fa-users fa"></i>
                    </div>
@@ -24,7 +24,7 @@ const Experience = () => {
                                                                                                                        to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.</h5>
                                                                                                                        <br></br>
                </div>
-               <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+               <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
                   <div class="icon-wrapper">
                      <i class="fas fa-cog"></i>
                   </div>
@@ -37,7 +37,7 @@ const Experience = () => {
                   <h5 className="experienceText">Performed black box and unit testing on a software application using Postman and manually testing the application itself.</h5>
                   <br></br>
               </div>
-               <div class = "column" style = {{color:"black", textAlign:"left", padding:"3%", color:"black", alignItems:"center"}}>
+               <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="600">
                   <div class="icon-wrapper">
                        <i class="fas fa-code"></i>
                   </div>

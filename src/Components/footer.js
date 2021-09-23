@@ -4,11 +4,11 @@ import cat from '../img/coot.jpg';
 
 const Footer = () => {
     return (
-      <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px"}} id = "con">
+      <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px", color:"white"}} id = "con">
          <div class = "row70">
             <div class = "column">
                 <h5 className="numbering" style={{marginTop:"50px", color:"white"}}>05 | 05</h5>
-                <h3 style = {{color: "white", fontSize: "25px", letterSpacing:"10px", marginTop:"30px", }}>CONTACT ME</h3>
+                <h3 style = {{fontSize: "25px", letterSpacing:"10px", marginTop:"30px"}}>CONTACT ME</h3>
                 <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
             </div>
          </div>
@@ -17,15 +17,15 @@ const Footer = () => {
                  <h3 style = {{color: "white", fontSize:"20px"}}>Let's get in touch!</h3>
                  <br />
                  <h3 style = {{color: "white", fontSize:"20px"}}>Mobile: (+22) 584 0669</h3>
-                 <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
+                 <div class = "zoomDiv">
                     <div class = "zoom2">
-                        <a href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
                     </div>
                     <div class = "zoom2">
-                        <a href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        <a target="_blank" href="https://github.com/SuKaiwen"><i class="fab fa-github fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
                     </div>
                     <div class = "zoom2">
-                        <a href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
+                        <a target="_blank" href="mailto:kevinsu@outlook.co.nz"><i class="fa fa-envelope fa-2x" style = {{padding:"20px", color: "white"}}></i></a>
                     </div>
                 </div>
              </div>

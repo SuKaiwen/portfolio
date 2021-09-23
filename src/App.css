@@ -47,6 +47,9 @@
     flex-direction:row;
     flex:wrap;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .zoom{
@@ -197,7 +200,7 @@
 
 .parallax {
   background-image: url('img/work.jpg');
-  width: 100%;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,7 +209,7 @@
 
 .parallax2 {
   background-image: url('img/back.jpg');
-  height: 100%;
+  height:100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,7 +369,7 @@
     max-width:80%;
     width: 80%;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
 }@media screen and (min-width: 900px){
     .row80{
         display: flex;
@@ -435,7 +438,7 @@
   .skillsTextSpace{
     height:200vh;
   }
-
+  
   .skillsSpace{
     display:none;
   }
@@ -644,7 +647,6 @@
   margin-left:20%;
 }
 
-
 .bodyText{
   font-size:18px;
   color:black;
@@ -661,6 +663,24 @@
   font-size:20px;
   color:black;
   font-weight: 550;
+}
+
+.experienceTopSection{
+  margin-top:100px;
+}
+
+.experienceCard{
+  color:black;
+  text-align: left;
+  padding:3%;
+  align-items: center;
+}
+
+.subHeader{
+  font-size:25px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-top:30px;
 }
 
 .projectsCard{
@@ -707,19 +727,6 @@
   .imageMain{
     display:none;
   }
-
-  .bodyName{
-    font-size:20px;
-  }
-
-
-    .bodyTitle{
-      font-size:15px;
-    }
-
-    .bodyText{
-        font-size:13px;
-    }
 }
 
 @media (min-width:600px) and (max-width:900px){
@@ -733,27 +740,3 @@
   }
 }
 
-
-.App-header {
-  background-color: #F5FAFA;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
