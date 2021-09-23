@@ -123,7 +123,7 @@ const AboutMe = () => {
                     </div>
                     <div className="skillsHeader">
                         <h5 className="bodyName">SKILLS </h5>
-                        <h5 className="bodyText">Below is a quick overview of my main technical skills and tools I like to use..</h5>
+                        <h5 className="bodyText">Below is a quick overview of my main technical skills and tools I like to use...</h5>
                     </div>
                     <div classname="skillsMain">
                     <div class = "column" style = {{justifyContent:"center", alignItems:"center"}}>
