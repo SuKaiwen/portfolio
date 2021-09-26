@@ -32,6 +32,7 @@ const AboutMe = () => {
                         <br />
                         <div>
                             <p class="badge badge-primary">React</p>
+                            <p class="badge badge-primary">Vue</p>
                             <p class="badge badge-primary">HTML</p>
                             <p class="badge badge-primary">CSS</p>
                             <p class="badge badge-primary">JavaScript</p>
@@ -43,6 +44,12 @@ const AboutMe = () => {
                             <p class="badge badge-success">Passionate</p>
                             <p class="badge badge-success">Fast Learner</p>
                             <p class="badge badge-success">Ambitious</p>
+                            <p class="badge badge-success">Team Player</p>
+                        </div>
+                        <div>
+                            <p class="badge badge-danger">English (Native Language)</p>
+                            <p class="badge badge-danger">Mandarin (Intermediate)</p>
+                            <p class="badge badge-danger">Japanese (Elementary)</p>
                         </div>
                         
                         <br />
@@ -63,7 +70,7 @@ const AboutMe = () => {
                     <div class = "column" data-aos="fade-left"data-aos-duration="800" style = {{textAlign:"left"}}>
                         <br />
                         <h5 className="bodyText">I'm a web developer from <span style={{color:"blue", fontWeight:"bold"}}>Auckland, New Zealand.</span> During highschool I took interest in subjects that enable my creativity such as art and graphical design.</h5>
-                        <h5 className="bodyText">I have an interest in all aspects of web development (<span style={{color:"blue", fontWeight:"bold"}}>both frontend and backend</span>) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
+                        <h5 className="bodyText">I have an interest in all aspects of web development (<span style={{color:"blue", fontWeight:"bold"}}>both front end and back end</span>) and love to learn new things. I like to code things from scratch and bring life to awesome ideas. In my spare time I enjoy socialising with friends or chasing competitive ranks in various games.</h5>
                         <br />
                         <h5 className="bodyText">And if you're curious my personality type is <a target="_blank" href="https://www.16personalities.com/esfp-personality"><span className="badge badge-success">ESFP</span></a></h5>
                         
@@ -103,7 +110,7 @@ const AboutMe = () => {
                     <div class = "column" data-aos="fade-up" style = {{textAlign:"left", marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={freecodecamp} class = "learningIcon" alt="Logo"/>
                         
-                        <p className="bodyText">Great tutorial on React and frontend development frameworks like SCSS.</p>
+                        <p className="bodyText">Great tutorial on React and front end development frameworks like SCSS.</p>
                     </div>
                     <div class = "column" data-aos="fade-up" style = {{textAlign:"left", marginTop:"30px", justifyContent:"space-between"}}>
                         <img src={w3school} class = "learningIcon" alt="Logo"/>
@@ -142,6 +149,10 @@ const AboutMe = () => {
                                     <i class="fab fa-css3-alt fa-4x" style = {{color:"#0000ff"}}></i>
                                     <h5 style = {{textAlign: "center", fontSize:"15px"}}>CSS</h5>
                                 </div>
+                                <div class = "zoom3">
+                                   <i class="fab fa-github-square fa-4x" style = {{color:"black"}}></i>
+                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>Github</h5>
+                                </div>
                             </div>
                             <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                                 <div class = "zoom3">
@@ -156,6 +167,10 @@ const AboutMe = () => {
                                     <i class="fab fa-react fa-4x" style = {{color:"#00fbfb"}}></i>
                                     <h5 style = {{textAlign: "center", fontSize:"15px"}}>React</h5>
                                 </div>
+                                <div class = "zoom3">
+                                   <i class="fab fa-vuejs fa-4x" style = {{color:"#41B883"}}></i>
+                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>Vue js</h5>
+                                </div>
                             </div>
                             <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                                 <div class = "zoom3">
@@ -166,47 +181,60 @@ const AboutMe = () => {
                                    <i class="fab fa-java fa-4x" style = {{color:"#00008b"}}></i>
                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>Java</h5>
                                 </div>
+                                <div class = "zoom3">
+                                   <i class="fab fa-node-js fa-4x" style = {{color:"#00A300"}}></i>
+                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>Node js</h5>
+                                </div>
+                                <div class = "zoom3">
+                                   <i class="fab fa-stack-overflow fa-4x" style = {{color:"#f48024"}}></i>
+                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>"Problem Solving Platforms"</h5>
+                                </div>
                             </div>
+                            
+                        </div>
+                        <h5 className="bodyText" style={{marginTop:"100px"}}>I also have experience in... <i class="fas fa-thumbs-up" style={{color:"#ff6666"}}></i></h5>
+                    
+                        <div class = "row" style = {{width:"100%", justifyContent:"space-between"}}>
+                        <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
+                            <div class = "zoom3">
+                                <i class="fa fa-database fa-3x" style={{color:"green"}}></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>MySQL</h5>
                             </div>
-                            <h5 className="bodyText" style={{marginTop:"100px"}}>I also have experience in... <i class="fas fa-thumbs-up" style={{color:"#ff6666"}}></i></h5>
-                        
-                            <div class = "row" style = {{width:"100%", justifyContent:"space-between"}}>
-                            <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
-                              <div class = "zoom3">
-                                 <i class="fa fa-database fa-4x" style={{color:"green"}}></i>
-                                 <h5 style = {{textAlign: "center", fontSize:"15px"}}>MySQL</h5>
-                              </div>
-                              <div class = "zoom3">
-                                  <i class="fab fa-angular fa-4x" style={{color:"red"}}></i>
-                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Angular</h5>
-                              </div>
-                              <div class = "zoom3">
-                                    <i class="fas fa-code fa-4x" style={{color:"blue"}}></i>
-                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>C++</h5>
-                               </div>
-                          </div>
+                            <div class = "zoom3">
+                                <i class="fab fa-angular fa-3x" style={{color:"red"}}></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>Angular</h5>
+                            </div>
+                            <div class = "zoom3">
+                                <i class="fas fa-code fa-3x" style={{color:"blue"}}></i>
+                                <h5 style = {{textAlign: "center", fontSize:"15px"}}>C++</h5>
+                            </div>
+                        </div>
                           <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                               <div class = "zoom3">
-                                 <i class="fas fa-sitemap fa-4x" style={{color:"#ff8c00"}}></i>
+                                 <i class="fas fa-sitemap fa-3x" style={{color:"#ff8c00"}}></i>
                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Hibernate</h5>
                               </div>
                               <div class = "zoom3">
-                                  <i class="fas fa-file-code fa-4x" style={{color:"yellow"}}></i>
+                                  <i class="fas fa-file-code fa-3x" style={{color:"yellow"}}></i>
                                   <h5 style = {{textAlign: "center", fontSize:"15px"}}>Redux</h5>
                              </div>
                              <div class = "zoom3">
-                                   <i class="fas fa-code fa-4x" style = {{color:"#db7083"}}></i>
+                                   <i class="fas fa-code fa-3x" style = {{color:"#db7083"}}></i>
                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>MATLAB</h5>
                               </div>
                           </div>
                           <div class = "column2" style = {{width:"100%", alignItems:"center"}}>
                               <div class = "zoom3">
-                                 <i class="fas fa-network-wired fa-4x" style = {{color:"#00fbfb"}}></i>
+                                 <i class="fas fa-network-wired fa-3x" style = {{color:"#00fbfb"}}></i>
                                  <h5 style = {{textAlign: "center", fontSize:"15px"}}>Axios</h5>
                               </div>
                               <div class = "zoom3">
-                                    <i class="fas fa-code fa-4x" style = {{color:"#442a5d"}}></i>
+                                    <i class="fas fa-code fa-3x" style = {{color:"#442a5d"}}></i>
                                     <h5 style = {{textAlign: "center", fontSize:"15px"}}>C#/.Net</h5>
+                               </div>
+                               <div class = "zoom3">
+                                    <i class="fab fa-bitbucket fa-3x" style = {{color:"#2684FF"}}></i>
+                                    <h5 style = {{textAlign: "center", fontSize:"15px"}}>Bitbucket</h5>
                                </div>
                           </div>
                          </div>

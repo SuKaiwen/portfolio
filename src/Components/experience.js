@@ -42,7 +42,7 @@ const Experience = () => {
                        <i class="fas fa-code"></i>
                   </div>
                   <br></br>
-                  <h5 className="experienceHeader">Frontend Intern</h5>
+                  <h5 className="experienceHeader">Front End Intern</h5>
                   <h5 className="experienceHeader">GPOS Limited</h5>
                   <hr style = {{width: "50%", backgroundColor: "#ff6666", height:"5px"}}></hr>
                   <h5 className="experienceHeader">Dec 2019- Feb 2020</h5>
