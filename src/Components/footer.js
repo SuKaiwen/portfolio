@@ -5,14 +5,14 @@ import cat from '../img/coot.jpg';
 const Footer = () => {
     return (
       <div class = "row" style = {{backgroundColor: "#c85349", marginTop:"50px", color:"white"}} id = "con">
-         <div class = "row70">
+         <div class = "row80">
             <div class = "column">
                 <h5 className="numbering" style={{marginTop:"50px", color:"white"}}>05 | 05</h5>
                 <h3 style = {{fontSize: "25px", letterSpacing:"10px", marginTop:"30px"}}>CONTACT ME</h3>
                 <h3 style = {{textAlign: "left", marginTop:"50px"}}>  </h3>
             </div>
          </div>
-         <div class = "row70">
+         <div class = "row80">
             <div class = "column" style = {{minHeight:"200px"}}>
                  <h3 style = {{color: "white", fontSize:"20px"}}>Let's get in touch!</h3>
                  <br />
@@ -37,7 +37,7 @@ const Footer = () => {
                 <h3 style = {{color: "white", fontSize:"20px", marginTop:"20px"}}>Thank you for making it all the way to the end!</h3>
             </div>
          </div>
-         <div class = "row70">
+         <div class = "row80">
              <div class = "column" style = {{minHeight:"100px", justifyContent:"center", alignItems:"center"}}>
                 <div class = "zoom">
                     <a href="#top"><i class="fas fa-chevron-up" style = {{color:"white"}}></i></a>
