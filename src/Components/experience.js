@@ -10,7 +10,7 @@ const Experience = () => {
                 </div>
             </div>
             <div class = "row80" style = {{marginTop:"50px", textAlign:"left"}}>
-                <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300">
+                <div class = "column experienceCard">
                    <div class="icon-wrapper">
                        <i class="fas fa-users fa"></i>
                    </div>
@@ -24,7 +24,7 @@ const Experience = () => {
                                                                                                                        to maintain efficiency and order. Provided excellent customer service via professional and friendly communication.</h5>
                                                                                                                        <br></br>
                </div>
-               <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+               <div class = "column experienceCard">
                   <div class="icon-wrapper">
                      <i class="fas fa-cog"></i>
                   </div>
@@ -37,7 +37,7 @@ const Experience = () => {
                   <h5 className="experienceText">Performed black box and unit testing on a software application using Postman and manually testing the application itself.</h5>
                   <br></br>
               </div>
-               <div class = "column experienceCard" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="600">
+               <div class = "column experienceCard">
                   <div class="icon-wrapper">
                        <i class="fas fa-code"></i>
                   </div>
