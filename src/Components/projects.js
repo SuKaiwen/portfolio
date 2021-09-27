@@ -1,32 +1,55 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import data from './data';
 
-import snipsnok from '../img/snipsnok.jpg';
-import world2 from '../img/world2.jpg';
-import brain from '../img/brain.jpg';
-import travel3 from '../img/travel3.jpg';
-import weather from '../img/weather.jpg';
-import artica from '../img/artica.jpg';
-import watch from '../img/watch.jpg';
-import portfolio from '../img/portfolio.jpg';
-import osrs from '../img/osrs.jpg';
-
 const Projects = () => {
+
+    const [dataNew, setDataNew] = useState(data);
+    const [type, setType] = useState("All");
+
+    const changeData = (newType) => {
+        setType(newType);
+        switch(newType){
+            case "ALL":
+                setDataNew(data);
+                break;
+            case "VUE JS":
+                setDataNew(data.filter(datas => datas.tags.includes("Vue JS")));
+                break;
+            case "REACT":
+                setDataNew(data.filter(datas => datas.tags.includes("React")));
+                break;
+            case "API":
+                setDataNew(data.filter(datas => datas.tags.includes("Axios") || datas.tags.includes("API Handling")));
+                break;
+            default:
+                setDataNew(data);
+                break;
+        }
+    }
+
     return (
         <div style={{backgroundColor:"#00000d", width:"100%"}}>       
             <div class = "row" style = {{minHeight:"100px", marginBottom:"80px"}} id = "projects">
                 <div class = "row80" style = {{color:"white", marginTop:"150px"}} >
                     <div class = "column" style={{textAlign:"left"}}>
                         <h5 className="numbering">03 | 05</h5>
-                        <h5 className="subHeader">PROJECTS</h5>
+                        <h5 className="subHeader">{type} PROJECTS ({dataNew.length})</h5>
                         <h5 className="projectsText">A showcase containing some of the many projects I have developed</h5>
+                    </div>
+                    <div class ="column" style={{textAlign:"right"}}>
+                        <select className="ml-auto my-2 p-2 shadow-md rounded-md font-medium" onChange={ val => changeData(val.target.value)}>
+                            <option value="ALL">All</option>
+                            <option value="REACT">React</option>
+                            <option value="VUE JS">Vue JS</option>
+                            <option value="API">External API</option>
+                        </select>
                     </div>
                 </div>
             </div>
             <div class = "row center">
                 <div class="grid">
-                    {data.map((x) => {
+                    {dataNew.map((x) => {
                         return (
                             <div class = "card-alt">
                                 <img src={x.image} alt="Logo" style = {{width:"100%"}}/>

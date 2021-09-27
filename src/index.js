@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div style={{fontFamily: "Montserrat", width:"100%"}}>
+    <div class = "loader" style={{fontFamily: "Montserrat", width:"100%"}}>
       <App />
     </div>
   </React.StrictMode>,
