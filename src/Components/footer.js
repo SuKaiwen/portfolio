@@ -16,7 +16,7 @@ const Footer = () => {
             <div class = "column" style = {{minHeight:"200px"}}>
                  <h3 style = {{color: "white", fontSize:"20px"}}>Let's get in touch!</h3>
                  <br />
-                 <h3 style = {{color: "white", fontSize:"20px"}}>Mobile: (+22) 584 0669</h3>
+                 <h3 style = {{color: "white", fontSize:"20px"}}>Mobile: (+64) 225840669</h3>
                  <div class = "zoomDiv">
                     <div class = "zoom2">
                         <a target="_blank" href="https://www.linkedin.com/in/kevin-su-618163191/"><i class="fab fa-linkedin fa-2x" style = {{padding:"20px", color: "white"}}></i></a>

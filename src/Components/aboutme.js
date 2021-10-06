@@ -51,7 +51,7 @@ const AboutMe = () => {
                         </div>
                         
                         <br />
-                        <h5 className="bodyTitle">Mobile: (+22) 584 0669</h5>
+                        <h5 className="bodyTitle">Mobile: (+64) 225840669</h5>
                         <br />
                         <div class = "zoomDiv" style = {{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
                            <div class = "zoom2">
